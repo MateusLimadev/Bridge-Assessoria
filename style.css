@@ -127,6 +127,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    
 }
 
 .visao .text {
@@ -148,7 +149,7 @@ a:hover {
 .valores {
     background-color: #0D0F12;
     color: #fff;
-    padding: 30px;
+    padding: 60px;
 }
 
 .valores .content {
