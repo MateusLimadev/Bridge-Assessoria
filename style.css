@@ -353,12 +353,13 @@ footer {
         margin-top: 15px; /* Adiciona margem à direita para separar o ícone do menu do lado direito */
         display: none; /* Inicia oculto por padrão em telas maiores (desktop) */
     }
-    
-    /* Media query para telas menores */
+}
+   
     @media only screen and (max-width: 768px) {
         #menuicone {
-            display: block; /* Exibe o ícone em telas menores (mobile) */
+            display: block; 
         }
     
-        /* ... (outros estilos específicos para telas menores, se necessário) ... */
+        
+        
     }
