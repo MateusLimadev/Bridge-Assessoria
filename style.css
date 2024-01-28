@@ -325,9 +325,39 @@ footer {
     }
 
     .mobile-nav .logo {
-        display: block;
+        display: ;
         margin: 0 auto;
         padding-top: 10px;
         
     }
 }
+
+/* ... (seu código CSS anterior) ... */
+
+/* ... (seu código CSS anterior) ... */
+
+/* Media query para telas menores */
+/* Media query para telas menores */
+@media only screen and (max-width: 768px) {
+
+    /* ... (suas regras de estilo anteriores) ... */
+
+    .mobile-nav .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 15px; /* Adiciona padding para dar espaço às bordas da tela */
+    }
+
+    .mobile-nav .logo {
+        max-width: 80px; /* Ajuste o tamanho conforme necessário */
+    }
+
+    #menuicone {
+        max-width: 30px; /* Ajuste o tamanho conforme necessário */
+        margin-right: 24px;
+        margin-top: 15px; /* Adiciona margem à direita para separar o ícone do menu do lado direito */
+    }
+}
+
