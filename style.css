@@ -258,15 +258,15 @@ footer {
 @media only screen and (max-width: 768px) {
     
     #missaoh1{
-        padding-left: 14%;
+        padding-left: 9vh;
     }
 
     #visaoh1{
-        padding-left: 31%;
+        padding-left: 13vh;
     }
 
     #valoresh1{
-        padding-left: 29%;
+        padding-left: 14vh;
     }
     .menu-btn {
         display: block; /* Exibe o botão em telas menores */
