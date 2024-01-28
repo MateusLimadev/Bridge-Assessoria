@@ -39,51 +39,104 @@ body::-webkit-scrollbar-track {
     background-color: #0D0F12; 
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
+
+
+
+
+
+
+header {
     background-color: #0D0F12;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
     z-index: 1000;
-    margin-bottom: 0;
 }
 
-#menuicone{
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 6rem; /* Ajuste a altura aqui */
+}
+
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 375px;
+
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: aliceblue;
+    font-weight: 400;
+}
+
+.mobile-menu-icon{
     display: none;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    margin-left: auto;
+.mobile-menu{
+    display: none;
 }
 
-li {
-    margin: 0 20px;
-    padding-right: 30px;
-}
+@media screen and (max-width: 730px){
 
-a {
-    text-decoration: none;
-    color: #fff;
-    font-family: var(--futuraL); 
-    font-size: 20px;
-}
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
 
-a:hover {
-    color: #D96725;
-}
+    .nav-item{
+        display: none;
+    }
 
-.logo {
-    max-width: 113px;
-    margin-right: 10px;
+    .mobile-menu-icon{
+        display: block;
+    }
+    
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open{
+        display: block;
+    }
 }
 
 .missao {
@@ -322,44 +375,4 @@ footer {
     .valores .image {
         margin-bottom: 10px;
     }
-
-    /* Oculta os itens do mobile-nav e exibe apenas a logo centralizada */
-    .mobile-nav ul {
-        display: none;
-    }
-
-    .mobile-nav .logo {
-        display: block;
-        margin: 0 auto;
-        padding-top: 10px;
-        
-    }
-
-    .mobile-nav .nav-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 0 15px; /* Adiciona padding para dar espaço às bordas da tela */
-    }
-
-    .mobile-nav .logo {
-        max-width: 80px; /* Ajuste o tamanho conforme necessário */
-    }
-
-    #menuicone {
-        max-width: 30px; /* Ajuste o tamanho conforme necessário */
-        margin-right: 24px;
-        margin-top: 15px; /* Adiciona margem à direita para separar o ícone do menu do lado direito */
-        display: none; /* Inicia oculto por padrão em telas maiores (desktop) */
-    }
 }
-   
-    @media only screen and (max-width: 768px) {
-        #menuicone {
-            display: block; 
-        }
-    
-        
-        
-    }
