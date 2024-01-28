@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="background-body">
-    <nav>
+    <!-- Navegação para Desktop -->
+    <nav class="desktop-nav">
         <img class="logo" src="imagens/logo-bridge.png" alt="logo-bridge">
         <ul>
             <li><a href="#">Home</a></li>
@@ -17,11 +18,18 @@
             <li><a href="#">Contato</a></li>
         </ul>
     </nav>
-     
+
+    <!-- Navegação para Mobile -->
+    <div class="mobile-nav">
+        <img class="logo" src="imagens/logo-bridge.png" alt="logo-bridge">
+        
+    </div>
+
+    <!-- Seção Missão -->
     <section class="missao">
         <div class="content">
             <div class="text">
-                <h1>Nossa Missão</h1>
+                <h1 id="missaoh1">Nossa Missão</h1>
                 <p>Na Bridge Assessoria Digital, nossa missão é trazer o mundo digital para empresas que ainda não deram esse passo e proporcionar uma transformação para aquelas cujas informações estão desatualizadas. <br>
                 Acreditamos que a presença online é essencial nos dias de hoje, e estamos comprometidos em ajudar nossos clientes a brilhar no cenário digital.</p>
             </div>
@@ -30,12 +38,12 @@
             </div>
         </div>
     </section>
-    
 
+    <!-- Seção Visão -->
     <section class="visao">
         <div class="content">
             <div class="text">
-                <h1>Visão</h1>
+                <h1 id="visaoh1">Visão</h1>
                 <p>Nossa visão é criar uma rede de network que estabeleça pontes entre nossos clientes, fortalecendo e impulsionando todos os empreendimentos envolvidos. 
                     <br>Acreditamos que o poder do networking pode levar a oportunidades ilimitadas, e queremos ser o elo que conecta os negócios ao sucesso.
                 </p>
@@ -45,12 +53,12 @@
             </div>
         </div>
     </section>
-    
-    
+
+    <!-- Seção Valores -->
     <section class="valores">
         <div class="content">
             <div class="text">
-                <h1>Valores</h1>
+                <h1 id="valoresh1">Valores</h1>
                 <p>Na Bridge Assessoria Digital, nossos valores fundamentais são o compromisso com o cliente e a integridade.<br>
                     Colocamos o cliente no centro de tudo o que fazemos e priorizamos a honestidade em nossos relacionamentos, colocando-a acima de qualquer ganho monetário.
                 </p>
@@ -60,27 +68,25 @@
             </div>
         </div>
     </section>
-    
-    
 
-
-<footer>
-    <div class="footer-content">
-        <div class="footer-section about">
-            <h2>Sobre Nós</h2>
-            <p>Somos a Bridge Assessoria Digital, especialistas em trazer o mundo digital para o seu negócio. Conte conosco para transformar sua presença online.</p>
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre Nós</h2>
+                <p>Somos a Bridge Assessoria Digital, especialistas em trazer o mundo digital para o seu negócio. Conte conosco para transformar sua presença online.</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contato</h2>
+                <p>Email: info@bridgeassessoria.com<br>Telefone: (11) 1234-5678</p>
+            </div>
         </div>
-
-        <div class="footer-section contact">
-            <h2>Contato</h2>
-            <p>Email: info@bridgeassessoria.com<br>Telefone: (11) 1234-5678</p>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bridge Assessoria Digital | Desenvolvido por Mateus Lima </p>
         </div>
-    </div>
+    </footer>
 
-    <div class="footer-bottom">
-        <p>&copy; 2024 Bridge Assessoria Digital | Desenvolvido por Mateus Lima </p>
-    </div>
-</footer>
+    <!-- Seu código JavaScript (se houver) pode ser adicionado aqui -->
 
 </body>
 </html>
