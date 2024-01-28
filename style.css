@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'futura-light';
+    src: url(futura/Futura\ Light\ font.ttf);
+}
+
+:root {
+    --futuraL: 'futura-light'; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: var(--futuraL);
+}
+
+body.background-body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imagens/background-bridge.png);
+    background-size: cover;
+    background-position: center top;
+    font-family: var(--futuraL);
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+body::-webkit-scrollbar {
+    width: 12px; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #D96725; /* Cor da parte deslizante da barra de rolagem */
+    border-radius: 6px; 
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #0D0F12; 
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0D0F12;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+li {
+    margin: 0 20px;
+    padding-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--futuraL); 
+    font-size: 20px;
+}
+
+a:hover {
+    color: #D96725;
+}
+
+.logo {
+    max-width: 51px;
+    margin-right: 10px;
+}
+
+
+.missao {
+    background-size: cover;
+    background-position: center;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 120px);
+    overflow: auto;
+}
+
+.missao .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.missao .text {
+    max-width: 60%;
+}
+
+.missao .image {
+    max-width: 40%;
+    margin-bottom: 10px; /* Adicione um espaço abaixo da imagem */
+}
+
+.missao img {
+    width: 426px;
+    height: 304px;
+    object-fit: cover; /* Para garantir que a imagem mantenha as proporções e cubra a área especificada */
+    max-width: 100%; /* Ajusta o tamanho máximo da imagem para ser responsiva */
+    display: block; /* Remove o espaço extra abaixo da imagem */
+}
+
+
+
+
+.visao {
+    background-color: #ff5e00e7;
+}
+
+.visao .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.visao .text {
+    max-width: 60%;
+    color: #fff;
+}
+
+.visao img {
+    width: 390px;
+    height: 341px;
+    object-fit: cover; 
+}
+
+
+.visao img {
+    width: 100%;
+    height: auto;
+}
+
+
+.valores {
+    background-color: #0D0F12;
+    color: #fff;
+    padding: 30px;
+}
+
+.valores .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.valores .text {
+    max-width: 60%; /* Ajuste conforme necessário */
+}
+
+.valores .image {
+    max-width: 40%; /* Ajuste conforme necessário */
+    margin-top: 100px; 
+    margin-right: 30px;
+    
+}
+
+.valores img {
+    width: 521px;
+    height: 407px;
+    object-fit: cover; /* Para garantir que a imagem mantenha as proporções e cubra a área especificada */
+}
+
+
+
+section {
+    margin-top: 120px;
+    background-size: cover;
+    background-position: center;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 120px);
+    overflow: auto;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: var(--futuraL); 
+    text-align: left;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #fff;
+    font-size: 20px;
+    flex: 1;
+}
+
+img {
+    margin-left: 20px;
+    width: 40%;
+    max-height: 100%;
+}
