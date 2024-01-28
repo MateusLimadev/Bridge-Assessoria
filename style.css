@@ -327,6 +327,7 @@ footer {
     .mobile-nav .logo {
         display: block;
         margin: 0 auto;
+        padding-top: 10px;
         
     }
 }
