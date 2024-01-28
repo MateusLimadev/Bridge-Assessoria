@@ -116,6 +116,7 @@ a:hover {
     object-fit: cover; /* Para garantir que a imagem mantenha as proporções e cubra a área especificada */
     max-width: 100%; /* Ajusta o tamanho máximo da imagem para ser responsiva */
     display: block; /* Remove o espaço extra abaixo da imagem */
+    padding-top: 60px;
 }
 
 .visao {
@@ -175,7 +176,7 @@ a:hover {
 }
 
 section {
-    margin-top: 120px;
+    
     background-size: cover;
     background-position: center;
     padding-left: 30px;
