@@ -53,6 +53,10 @@ nav {
     margin-bottom: 0;
 }
 
+#menuicone{
+    display: none;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -325,22 +329,11 @@ footer {
     }
 
     .mobile-nav .logo {
-        display: ;
+        display: block;
         margin: 0 auto;
         padding-top: 10px;
         
     }
-}
-
-/* ... (seu código CSS anterior) ... */
-
-/* ... (seu código CSS anterior) ... */
-
-/* Media query para telas menores */
-/* Media query para telas menores */
-@media only screen and (max-width: 768px) {
-
-    /* ... (suas regras de estilo anteriores) ... */
 
     .mobile-nav .nav-content {
         display: flex;
@@ -358,6 +351,14 @@ footer {
         max-width: 30px; /* Ajuste o tamanho conforme necessário */
         margin-right: 24px;
         margin-top: 15px; /* Adiciona margem à direita para separar o ícone do menu do lado direito */
+        display: none; /* Inicia oculto por padrão em telas maiores (desktop) */
     }
-}
-
+    
+    /* Media query para telas menores */
+    @media only screen and (max-width: 768px) {
+        #menuicone {
+            display: block; /* Exibe o ícone em telas menores (mobile) */
+        }
+    
+        /* ... (outros estilos específicos para telas menores, se necessário) ... */
+    }
