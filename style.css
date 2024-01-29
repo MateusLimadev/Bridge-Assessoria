@@ -93,6 +93,10 @@ header {
     font-weight: 400;
 }
 
+.nav-link:hover{
+    color: #D96725;
+}
+
 .mobile-menu-icon{
     display: none;
     
@@ -112,6 +116,10 @@ header {
 
     .nav-item{
         display: none;
+    }
+
+    .nav-link:hover{
+        color: #D96725;
     }
 
     .mobile-menu-icon{
