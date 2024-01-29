@@ -115,7 +115,12 @@ header {
     }
 
     .mobile-menu-icon{
-        display: block;
+        display: inline-block;
+        
+    }
+
+    .icon{
+        width: 33px;
     }
     
     .mobile-menu-icon button{
