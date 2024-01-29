@@ -61,7 +61,6 @@ header {
 
 
 
-
 .logo{
     display: flex;
     align-items: center;
@@ -96,11 +95,14 @@ header {
 
 .mobile-menu-icon{
     display: none;
+    
 }
 
 .mobile-menu{
     display: none;
 }
+
+
 
 @media screen and (max-width: 730px){
 
@@ -120,6 +122,8 @@ header {
         background-color: transparent;
         border: none;
         cursor: pointer;
+        
+        
     }
 
     .mobile-menu ul{
