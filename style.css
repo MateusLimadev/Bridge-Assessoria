@@ -122,6 +122,17 @@ header {
     .icon{
         width: 33px;
     }
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 375px;
+    
+    }
+    
     
     .mobile-menu-icon button{
         background-color: transparent;
