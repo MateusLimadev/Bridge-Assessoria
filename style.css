@@ -71,10 +71,7 @@ header {
 
 }
 
-.nav-list{
-    display: flex;
-    align-items: center;
-}
+
 
 .nav-list ul{
     display: flex;
@@ -121,11 +118,14 @@ header {
 
     .icon{
         width: 33px;
+        padding-left: 10px;
     }
 
     .logo{
         display: flex;
         align-items: center;
+        width: 13rem;
+        
     }
     
     
