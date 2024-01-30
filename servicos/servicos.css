@@ -71,7 +71,8 @@ body {
 h3 {
     margin-top: 0;
     color: #0D0F12;
-    font-family: '--futuraB';
+    font-family: '--futuraL';
+    text-transform: uppercase;
     
     
 }
