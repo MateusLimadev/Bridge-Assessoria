@@ -82,72 +82,53 @@ p {
     color: #e15a1c;
 }
 
-button {
-    padding: 0;
-    margin: 0;
+.btn {
+    font-size: 17px;
+    background: transparent;
     border: none;
-    background: none;
+    padding: 1em 1.5em;
+    color: #e15a1c;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
     cursor: pointer;
   }
   
-  button {
-    --primary-color: #111;
-    --hovered-color: #c84747;
-    position: relative;
-    display: flex;
-    font-weight: 600;
-    font-size: 20px;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  
-  button p {
-    margin: 0;
-    position: relative;
-    font-size: 20px;
-    color: var(--primary-color);
-  }
-  
-  button::after {
-    position: absolute;
+  .btn::before {
     content: "";
-    width: 0;
-    left: 0;
-    bottom: -7px;
-    background: var(--hovered-color);
-    height: 2px;
-    transition: 0.3s ease-out;
-  }
-  
-  button p::before {
     position: absolute;
-    /*   box-sizing: border-box; */
-    content: "Subscribe";
-    width: 0%;
-    inset: 0;
-    color: var(--hovered-color);
-    overflow: hidden;
-    transition: 0.3s ease-out;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #e15a1c;
+    transition: 0.5s ease;
   }
   
-  button:hover::after {
+  .btn:hover {
+    color: #ffffff;
+    transition-delay: 0.5s;
+  }
+  
+  .btn:hover::before {
     width: 100%;
   }
   
-  button:hover p::before {
+  .btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
     width: 100%;
+    background-color: #e15a1c;
+    transition: 0.4s ease;
+    z-index: -1;
   }
   
-  button:hover svg {
-    transform: translateX(4px);
-    color: var(--hovered-color);
-  }
-  
-  button svg {
-    color: var(--primary-color);
-    transition: 0.2s;
-    position: relative;
-    width: 15px;
-    transition-delay: 0.2s;
+  .btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
   }
   
