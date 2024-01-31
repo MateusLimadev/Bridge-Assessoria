@@ -179,7 +179,7 @@ header {
 .service-card {
     width: 300px;
     margin: 20px;
-    background-color: #f9f9f9;
+    background-color:  #eeecdc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     overflow: hidden;
