@@ -25,12 +25,55 @@ body.background-body {
     background-repeat: no-repeat;
 }
 
-.top-feed{
+.top-feed {
+    /* Adicione estilos para a seção conforme necessário */
     background-image: url(imagens/backgroundbridge.jpg);
     padding-top: 15%;
-    margin-top: 10px;
+    margin-top: 50px; /* Ajuste a margem superior conforme necessário */
     opacity: 0.9;
     box-shadow: 0px 5px 15px rgba(224, 93, 12, 0.3);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Para centralizar os botões */
+    margin-top: 14rem; /* Ajuste a margem superior conforme necessário */
+    margin-left: 4rem;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.orange-button {
+    background-color: #E05D0C;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.orange-button:hover{
+    background-color: transparent;
+    border: 2px solid #ffffff89;
+    
+}
+
+
+.transparent-button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.transparent-button:hover{
+    color: #fff;
+    border: 2px solid #ffffff79;
+
 }
 
 
@@ -39,7 +82,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #867368; /* Cor da parte deslizante da barra de rolagem */
+    background-color: #ee600e; /* Cor da parte deslizante da barra de rolagem */
     border-radius: 6px; 
 }
 
