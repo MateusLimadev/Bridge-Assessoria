@@ -52,15 +52,11 @@ header {
 
 
 
-.logo{
-    display: flex;
-    align-items: center;
+#logoimg{
+    width: 85%;
+    padding-top: 10px;
 }
 
-.logo{
-    width: 375px;
-
-}
 
 .nav-list{
     display: flex;
@@ -124,21 +120,20 @@ header {
         display: inline-block;
         
     }
+    
+    .mobile-menu-icon{
+        padding-top: 9px;
+    }
 
     .icon{
         width: 25px;
         padding-left: 10px;
     }
 
-    .logo{
-        display: flex;
-        align-items: center;
-        width: 13rem;
-        
+    
+    #logoimg{
+        width: 70%
     }
-    
-    
-    
     
     .mobile-menu-icon button{
         background-color: transparent;
@@ -218,12 +213,7 @@ p {
     color: #e15a1c;
 }
 
-.logo{
-    display: inline-block;
-    max-width: 40%;
-    
- 
-}
+
 
 .logoimg{
     padding-top: 10px;

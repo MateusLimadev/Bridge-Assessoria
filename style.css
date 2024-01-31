@@ -59,17 +59,11 @@ header {
     padding: 6px 6rem; /* Ajuste a altura aqui */
 }
 
-
-
-.logo{
-    display: flex;
-    align-items: center;
+#logoimg{
+    width: 85%;
+    padding-top: 10px;
 }
 
-.logo{
-    width: 375px;
-
-}
 
 .nav-list{
     display: flex;
@@ -139,13 +133,10 @@ header {
         padding-left: 10px;
     }
 
-    .logo{
-        display: flex;
-        align-items: center;
-        width: 13rem;
-        
+    #logoimg{
+        width: 70%;
+        padding-top: 10px;
     }
-    
     
     
     
@@ -368,6 +359,10 @@ footer {
 
     .desktop-nav {
         display: none;
+    }
+    
+    .mobile-menu-icon{
+        padding-top: 9px;
     }
 
     .mobile-nav {
