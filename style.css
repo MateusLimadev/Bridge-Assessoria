@@ -17,14 +17,22 @@ body {
 body.background-body {
     margin: 0;
     padding: 0;
-    background-image: url(imagens/background-bridge.png);
-    background-size: cover;
-    background-position: center top;
+    background-size: cover; /* Alteração para cobrir toda a área */
+    background-position: center; /* Garante que a imagem esteja centralizada */
     font-family: var(--futuraL);
     height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
+.top-feed{
+    background-image: url(imagens/backgroundbridge.jpg);
+    padding-top: 15%;
+    margin-top: 10px;
+    opacity: 0.9;
+    box-shadow: 0px 5px 15px rgba(224, 93, 12, 0.3);
+}
+
 
 body::-webkit-scrollbar {
     width: 12px; 
@@ -42,6 +50,13 @@ body::-webkit-scrollbar-track {
 
 
 
+/* Adicione uma classe 'transparent' ao nav para torná-lo transparente */
+header.transparent {
+    background-color: rgba(13, 15, 18, 0.543); /* Ajuste a cor de fundo e a transparência conforme necessário */
+}
+
+/* Restante dos estilos */
+/* ... */
 
 
 
@@ -177,6 +192,7 @@ header {
     align-items: flex-start;
     min-height: calc(100vh - 120px);
     overflow: auto;
+    
 }
 
 .missao .content {
@@ -204,7 +220,7 @@ header {
 }
 
 .visao {
-    background-color: #ff5e00e7;
+    background-color: #ff5e00de;
 }
 
 .visao .content {
