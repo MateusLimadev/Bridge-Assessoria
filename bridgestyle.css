@@ -333,13 +333,7 @@ button {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
+/*FOOTER*/
 footer {
     background-color: #0D0F12;
     color: #fff;
@@ -397,32 +391,7 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*MOBILE*/
+     /*MOBILE*/
 @media screen and (max-width: 730px){
 
 
