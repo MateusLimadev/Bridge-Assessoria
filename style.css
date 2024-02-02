@@ -432,6 +432,11 @@ footer {
     background-position-y: 24%;
     }
 
+
+
+    .footer-section p{
+        font-size: 10px;
+    }
     .footer-bottom p {
         font-size: 10px;
     }
@@ -523,7 +528,7 @@ footer {
 
 
     .nav-bar{
-        padding: 1.5rem 1rem;
+        padding: 0.5rem 1rem;
     }
 
     .nav-item{
