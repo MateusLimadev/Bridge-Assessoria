@@ -249,6 +249,7 @@ button {
 
 #arvoredoprev{
     display: flex;
+    width: 76%;
     margin-left: 10rem;
     margin-top: 5rem;
     border-radius: 9px;
