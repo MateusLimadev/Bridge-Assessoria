@@ -254,7 +254,13 @@ button {
     margin-top: 5rem;
     border-radius: 9px;
     box-shadow: 0 8px 16px rgba(199, 193, 180, 0.2), 0 -8px 16px rgba(198, 189, 170, 0.511);
+    transition: opacity 0.3s ease-in-out;
     
+}
+
+#arvoredoprev:hover{
+    opacity: 0.8;
+
 }
 
 .projeto-destaque h2{
@@ -288,6 +294,13 @@ button {
     width: 100%;
     border-radius: 10px;
     padding: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.quatro-imagens img:hover{
+    opacity: 0.8;
+    
+    
 }
 
 .quatro-imagens h2,
