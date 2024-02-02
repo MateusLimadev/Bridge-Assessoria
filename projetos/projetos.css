@@ -14,6 +14,14 @@
     font-family: var(--futuraL);
 }
 
+
+#emdev{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10rem;
+}
+
 body{
     background-color: #0D0F12;
 }
@@ -46,7 +54,7 @@ header.transparent {
 }
 
 
-
+ 
 /*NAV-BAR PC*/
 .nav-bar {
     display: flex;

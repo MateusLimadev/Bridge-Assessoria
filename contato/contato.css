@@ -14,12 +14,7 @@
     font-family: var(--futuraL);
 }
 
-#emdev{
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 10rem;
-}
+
 
 body{
     background-color: #0D0F12;
@@ -53,7 +48,7 @@ header.transparent {
 }
 
 
-
+ 
 /*NAV-BAR PC*/
 .nav-bar {
     display: flex;
@@ -95,6 +90,38 @@ header.transparent {
 .mobile-menu{
     display: none;
 }
+
+
+.email{
+    margin-top: 8rem;
+    color: #eeecdc;
+    padding-left: 6rem;
+    font-size: 18px;
+    
+}
+
+.email a{
+    text-decoration: none;
+    color: #eeecdc;
+}
+
+.tels{
+    padding-top: 2%;
+    padding-left: 6rem;
+    font-size: 15px;
+    
+}
+
+.tels a{
+    text-decoration: none;
+    color: #eeecdc;
+}
+
+h1{
+    padding-bottom: 31px;
+    font-size: 52px;
+}
+
 
 @media screen and (max-width: 730px){
 
