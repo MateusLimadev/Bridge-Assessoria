@@ -99,6 +99,10 @@ header.transparent {
     
 }
 
+.top-mobile{
+    display: none;
+}
+
 .buttons-container {
     display: flex;
     justify-content: flex-start;
@@ -408,7 +412,109 @@ footer {
      /*MOBILE*/
 @media screen and (max-width: 730px){
 
+    .buttons-container {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: -12rem;
+        padding-left: 4rem;
+    }
 
+
+    .top-mobile{
+    background-image: url(imagens/background-mobile.png);
+    background-color: #D96725;
+    padding-top: 41rem;
+    display: block;
+    opacity: 0.9;
+    box-shadow: 0px 5px 15px rgba(224, 93, 12, 0.3);
+    background-size: cover;
+    background-position: center;
+    background-position-y: 24%;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+    }
+
+    .quatro-imagens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .imagem-container {
+        width: 39%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .quatro-imagens img {
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    .quatro-imagens img:hover{
+        opacity: 0.8;
+        
+        
+    }
+    
+    .quatro-imagens h2,
+    .quatro-imagens h3 {
+        margin: 0.5rem 0;
+        
+    }
+    
+    .quatro-imagens h3{
+        color: #ff6a00;
+        text-align: left;
+        font-size: 13px;
+    }
+    
+    .quatro-imagens h2{
+        color: #ffffff;
+        text-align: left;
+        font-size: 18px;
+    }
+    
+
+
+    #arvoredoprev{
+    display: flex;
+    width: 76%;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    border-radius: 9px;
+    box-shadow: 0 8px 16px rgba(199, 193, 180, 0.2), 0 -8px 16px rgba(198, 189, 170, 0.511);
+    transition: opacity 0.3s ease-in-out;
+    }
+
+
+    #arvoredoprev:hover{
+        opacity: 0.8;
+    
+    }
+
+    .projeto-destaque h2{
+        color: white;
+        font-size: 24px;
+        padding-left: 3rem;
+        padding-top: 18px;
+    }
+    
+    .projeto-destaque h3{
+        color: #ff6a00;
+        font-size: 16px;
+        padding-left: 3rem;
+        padding-top: 10px;
+    }
+    
+
+    .cards-container{
+        display: none;
+    }
 
     .top-content{
         display: none;
