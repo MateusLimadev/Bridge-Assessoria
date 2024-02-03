@@ -88,7 +88,7 @@ header.transparent {
 
 /*imagem e botões do topo*/
 .top-content {
-    background-image: url(imagens/backgroundbridge.jpg);
+    background-image: url(imagens/background-bridge.jpg)
     padding-top: 41rem;
     opacity: 0.9;
     box-shadow: 0px 5px 15px rgba(224, 93, 12, 0.3);
