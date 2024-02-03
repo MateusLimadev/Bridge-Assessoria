@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var scrollPosition = window.scrollY;
 
         // Obtém o elemento de navegação (nav)
-        var nav = document.querySelector("header");
+        var nav = document.querySelector("nav");
 
         // Adiciona ou remove a classe 'transparent' com base na posição de rolagem
         if (scrollPosition === 0) {

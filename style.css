@@ -40,7 +40,7 @@ header {
 }
 
 header.transparent {
-    background-color: rgba(13, 15, 18, 0.733); /* Ajuste a cor de fundo e a transparência conforme necessário */
+    
 }
 
 /*NAV-BAR PC*/
@@ -48,6 +48,16 @@ header.transparent {
     display: flex;
     justify-content: space-between;
     padding: 6px 6rem; /* Ajuste a altura aqui */
+    position: fixed;
+    background-color: #0D0F12;
+    font-family: var(--futuraL);
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav.transparent{
+    background-color: rgba(13, 15, 18, 0.733); /* Ajuste a cor de fundo e a transparência conforme necessário */
 }
 
 .nav-list{
@@ -418,6 +428,11 @@ footer {
         justify-content: flex-start;
         margin-top: -12rem;
         padding-left: 4rem;
+    }
+
+
+    .img-back{
+        display: none;
     }
 
 
