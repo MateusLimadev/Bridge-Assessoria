@@ -125,13 +125,7 @@ nav.transparent{
     transform: scale(1.05);
 }
 
-#p2{
-    padding-bottom: 30px;
-}
 
-#p3{
-    padding-bottom: 30px;
-}
 
 .card img {
     max-width: 100%;
@@ -253,7 +247,9 @@ button:hover svg {
     position: relative;
     transition: 0.5s ease;
     cursor: pointer;
+    
   }
+
   
   .btn::before {
     content: "";
