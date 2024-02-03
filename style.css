@@ -39,10 +39,6 @@ header {
     z-index: 1000;
 }
 
-header.transparent {
-    
-}
-
 /*NAV-BAR PC*/
 .nav-bar {
     display: flex;
