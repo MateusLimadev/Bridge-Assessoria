@@ -34,7 +34,6 @@ body::-webkit-scrollbar-track {
 header {
     background-color: #0D0F12;
     font-family: var(--futuraL);
-    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -86,17 +85,10 @@ header.transparent {
     display: none;
 }
 
-/*imagem e botões do topo*/
-.top-content {
-    background-image: url(imagens/background-bridge.jpg);
-    padding-top: 41rem;
-    opacity: 0.9;
-    box-shadow: 0px 5px 15px rgba(224, 93, 12, 0.3);
-    background-size: cover;
-    background-position: center;
-    background-position-y: 24%;
-    
-    
+
+.img-back img {
+    width: 100%; /* Ajusta a largura da imagem para cobrir a largura da tela */
+    height: auto;
 }
 
 .top-mobile{
