@@ -407,9 +407,14 @@ footer {
 }
 
 
+/* 
+   ------------------------------------------------------------------------------------------------------------------------------------------------------
+   MOBILE - Estilos para telas pequenas
+   ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
 
 
-     /*MOBILE*/
+
 @media screen and (max-width: 730px){
 
     .buttons-container {
@@ -431,7 +436,11 @@ footer {
     background-position: center;
     background-position-y: 24%;
     }
+    
 
+    .quatro-imagens{
+        display: none;
+    }
 
 
     .footer-section p{
