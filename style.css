@@ -95,53 +95,12 @@ nav.transparent{
 .img-back img {
     width: 100%; /* Ajusta a largura da imagem para cobrir a largura da tela */
     height: auto;
+    
+    
 }
 
 .top-mobile{
     display: none;
-}
-
-.buttons-container {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: -13rem;
-    padding-left: 9rem;
-   
-}
-
-button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.orange-button {
-    background-color: #E05D0C;
-    color: #fff;
-    border: 2px solid #fff;
-}
-
-.orange-button:hover{
-    background-color: transparent;
-    border: 2px solid #ffffff89;
-    
-}
-
-
-.transparent-button {
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #fff;
-}
-
-.transparent-button:hover{
-    color: #fff;
-    border: 2px solid #ffffff79;
-
 }
 
 .cards-container {
@@ -419,6 +378,42 @@ footer {
 
 @media screen and (max-width: 730px){
 
+    
+    button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .orange-button {
+        background-color: #E05D0C;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+    
+    .orange-button:hover{
+        background-color: transparent;
+        border: 2px solid #ffffff89;
+        
+    }
+    
+    
+    .transparent-button {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+    
+    .transparent-button:hover{
+        color: #fff;
+        border: 2px solid #ffffff79;
+    
+    }
+    
     .buttons-container {
         display: flex;
         justify-content: flex-start;
