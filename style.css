@@ -254,7 +254,7 @@ button {
 #arvoredoprev{
     display: flex;
     width: 76%;
-    margin-left: 10rem;
+    margin-left: 13%;
     margin-top: 5rem;
     border-radius: 9px;
     box-shadow: 0 8px 16px rgba(199, 193, 180, 0.2), 0 -8px 16px rgba(198, 189, 170, 0.511);
@@ -270,14 +270,14 @@ button {
 .projeto-destaque h2{
     color: white;
     font-size: 30px;
-    padding-left: 10rem;
+    padding-left: 13%;
     padding-top: 18px;
 }
 
 .projeto-destaque h3{
     color: #ff6a00;
     font-size: 16px;
-    padding-left: 10rem;
+    padding-left: 13%;
     padding-top: 10px;
 }
 
@@ -421,7 +421,7 @@ footer {
 
 
     .top-mobile{
-    background-image: url(imagens/backgrund-mobile.png);
+    background-image: url(imagens/background-mobile.jpg);
     background-color: #D96725;
     padding-top: 41rem;
     display: block;
@@ -468,7 +468,7 @@ footer {
     
     .quatro-imagens h2,
     .quatro-imagens h3 {
-        margin: 0.5rem 0;
+        padding-left: 10%;
         
     }
     
@@ -489,8 +489,8 @@ footer {
     #arvoredoprev{
     display: flex;
     width: 76%;
-    margin-left: 3rem;
-    margin-top: 5rem;
+    margin-left: 13%;
+    margin-top: 10%;
     border-radius: 9px;
     box-shadow: 0 8px 16px rgba(199, 193, 180, 0.2), 0 -8px 16px rgba(198, 189, 170, 0.511);
     transition: opacity 0.3s ease-in-out;
@@ -505,14 +505,14 @@ footer {
     .projeto-destaque h2{
         color: white;
         font-size: 24px;
-        padding-left: 3rem;
+        padding-left: 13%;
         padding-top: 18px;
     }
     
     .projeto-destaque h3{
         color: #ff6a00;
         font-size: 16px;
-        padding-left: 3rem;
+        padding-left: 13%;
         padding-top: 10px;
         
     }
