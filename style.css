@@ -281,6 +281,10 @@ button {
     padding-top: 10px;
 }
 
+.projetos-mobile{
+    display: none;
+}
+
 
 .quatro-imagens {
     display: flex;
@@ -450,51 +454,7 @@ footer {
         font-size: 10px;
     }
 
-    .quatro-imagens {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     
-    .imagem-container {
-        width: 39%;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-    
-    .quatro-imagens img {
-        width: 100%;
-        border-radius: 10px;
-        padding: 10px;
-        transition: opacity 0.3s ease-in-out;
-    }
-    
-    .quatro-imagens img:hover{
-        opacity: 0.8;
-        
-        
-    }
-    
-    .quatro-imagens h2,
-    .quatro-imagens h3 {
-        padding-left: 10%;
-        
-    }
-    
-    .quatro-imagens h3{
-        color: #ff6a00;
-        text-align: left;
-        font-size: 13px;
-    }
-    
-    .quatro-imagens h2{
-        color: #ffffff;
-        text-align: left;
-        font-size: 18px;
-    }
-    
-
-
     #arvoredoprev{
     display: flex;
     width: 76%;
@@ -526,6 +486,26 @@ footer {
         
     }
     
+
+    .projetos-mobile{
+        display: block;
+    }
+
+
+    .projetos-mobile h2{
+        color: white;
+        font-size: 24px;
+        padding-left: 13%;
+        padding-top: 18px;
+
+    }
+
+    .projetos-mobile h3{
+        color: #ff6a00;
+        font-size: 16px;
+        padding-left: 13%;
+        padding-top: 10px;
+    }
 
     .cards-container{
         display: none;
