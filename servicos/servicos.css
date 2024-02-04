@@ -96,7 +96,147 @@ header.transparent {
     display: none;
 }
 
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 90px;
+    padding-top: 17%;
+    background-color: #eeecdc;
+    text-align: center;
+}
 
+
+.card {
+    flex: 0 1 calc(30% - 20px); /* Define a largura dos cards e adiciona margem */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #eeecdc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 300px;
+    padding: 10px;
+   
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #fc7f26;
+    padding-bottom: 17px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #ff6a00;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+  }
+
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fc7f26;
+    transition: 0.5s ease;
+  }
+  
+  .btn:hover {
+    color: #f9f9f9;
+    transition-delay: 0.5s;
+  }
+  
+  .btn:hover::before {
+    width: 100%;
+  }
+  
+  .btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #fc7f26;
+    transition: 0.4s ease;
+    z-index: -1;
+  }
+  
+  .btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+
+  .top-frase{
+    background-color:#0D0F12 ;
+    
+  }
+
+  .top-frase h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+    position: absolute;
+    top: 48%;
+    left: 16%;
+}
+
+.subtitle {
+    text-align: center;
+    color: #ff6a00;
+    font-size: 39px;
+    position: absolute;
+    top: 130%;
+    left: 26%;
+}
+
+
+
+
+  .top-frase img{
+    max-width: 100%;
+    opacity: 31.7%;
+  }
+
+  .top-frase p {
+    text-align: center;
+    padding: 16%;
+    padding-bottom: 0;
+    padding-top: 38px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 61%;
+    left: 2%;
+}
 
 
 
