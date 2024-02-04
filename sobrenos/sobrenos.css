@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'futura-light';
     src: url(../fonts/futura/futura\ light\ bt.ttf)
@@ -13,6 +12,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--futuraL);
+}
+
+#emdev{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10rem;
 }
 
 body{
@@ -33,13 +39,17 @@ body::-webkit-scrollbar-track {
 }
 
 
-
 header {
     background-color: #0D0F12;
     font-family: var(--futuraL);
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+}
+
+header.transparent {
+    background-color: rgba(13, 15, 18, 0.733); /* Ajuste a cor de fundo e a transparência conforme necessário */
 }
 
 
@@ -49,16 +59,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 6px 6rem; /* Ajuste a altura aqui */
-    position: fixed;
-    background-color: #0D0F12;
-    font-family: var(--futuraL);
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-nav.transparent{
-    background-color: rgba(13, 15, 18, 0.733); /* Ajuste a cor de fundo e a transparência conforme necessário */
 }
 
 .nav-list{
@@ -96,10 +96,15 @@ nav.transparent{
     display: none;
 }
 
+
+
+
+
 .missao{
     background-color: white;
     padding: 10%;
     position: relative;
+    padding-top: 10%;
 }
 
 
@@ -189,23 +194,17 @@ nav.transparent{
     transform: translate(0, -50%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 730px){
 
+
+
+    .top-content{
+        display: none;
+    }
+
+
     .nav-bar{
-        padding: 0.5rem 1rem;
+        padding: 1.5rem 1rem;
     }
 
     .nav-item{
@@ -262,11 +261,48 @@ nav.transparent{
         padding-top: 1.2rem;
     }
 
+
+    .missao,
+    .visao,
+    .valores {
+        padding-top: 30%;
+    }
+
+    .missao img,
+    .visao img,
+    .valores img {
+            width: 93%;
+            position: relative;
+            top: 34px;
+            right: 0px;
+            left: 19px;
+            transform: none;
+            margin-top: 1rem;
+            padding-bottom: 40px;
+        }
+    
+
+    .missao p,
+    .visao p,
+    .valores p {
+        padding-right: 0; /* Remove right padding */
+        text-align: center; /* Center the text */
+        font-size: 20px;
+    }
+
+    .missao h1,
+    .visao h1,
+    .valores h1{
+    padding-bottom: 27px;
+    font-size: 60px;
+}
+    }
+
+    
+
     .open{
         display: block;
     }
 
-    img{
-        display: none;
-    }
-}
+
+

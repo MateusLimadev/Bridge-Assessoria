@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var scrollPosition = window.scrollY;
 
         // Obtém o elemento de navegação (nav)
-        var nav = document.querySelector("nav");
+        var nav = document.querySelector("header");
 
         // Adiciona ou remove a classe 'transparent' com base na posição de rolagem
         if (scrollPosition === 0) {
@@ -36,3 +36,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+// Ajusta a largura dos cards com base no tamanho da janela de visualização
+function ajustarLarguraCards() {
+    const cardsContainer = document.getElementById('cardscontainer');
+    const cards = cardsContainer.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        card.style.maxWidth = `${window.innerWidth / 4}px`; // Dividindo por 4 para mostrar inicialmente 4 cards
+    });
+}
+
