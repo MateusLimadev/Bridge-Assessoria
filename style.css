@@ -535,46 +535,11 @@ footer {
 @media screen and (max-width: 730px){
 
     
-    button {
-        padding: 10px 20px;
-        margin: 0 10px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        font-weight: bold;
-    }
-    
-    .orange-button {
-        background-color: #E05D0C;
-        color: #fff;
-        border: 2px solid #fff;
-    }
-    
-    .orange-button:hover{
-        background-color: transparent;
-        border: 2px solid #ffffff89;
-        
-    }
-    
-    
-    .transparent-button {
-        background-color: transparent;
-        color: #fff;
-        border: 2px solid #fff;
-    }
-    
-    .transparent-button:hover{
-        color: #fff;
-        border: 2px solid #ffffff79;
-    
-    }
-    
     .buttons-container {
         display: flex;
         justify-content: flex-start;
-        margin-top: -12rem;
-        padding-left: 4rem;
+        margin-top: -15rem;
+        padding-left: 8rem;
     }
 
 
@@ -583,17 +548,27 @@ footer {
     }
 
 
-    .top-mobile{
-    background-image: url(imagens/backgrund-mobile.png);
-    background-color: #D96725;
-    padding-top: 41rem;
-    display: block;
-    opacity: 0.9;
-    box-shadow: 0px 5px 15px rgba(224, 93, 12, 0.3);
-    background-size: cover;
-    background-position: center;
-    background-position-y: 24%;
+    .top-mobile img {
+        width: 100%; /* Ajusta a largura da imagem para cobrir a largura da tela */
+        height: auto;
+        opacity: 0.9;
     }
+    
+    .top-mobile {
+        position: relative;
+        display: block;
+    }
+    
+    .top-mobile button {
+        position: absolute;
+        top: 64%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 70%; /* Defina a largura máxima do texto conforme necessário */
+        
+    }
+
     
 
     .quatro-imagens{
