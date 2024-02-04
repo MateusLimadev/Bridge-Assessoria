@@ -521,7 +521,9 @@ footer {
 #devsession{
     text-decoration: none;
     color: #D96725;
+    
 }
+
 
 
 /* 
@@ -534,7 +536,7 @@ footer {
 
 @media screen and (max-width: 730px){
 
-    
+
     .buttons-container {
         display: flex;
         justify-content: flex-start;
@@ -722,5 +724,9 @@ footer {
 
     .open{
         display: block;
+    }
+
+    .redes-sociais img{
+        padding-top: 20px;
     }
 }
