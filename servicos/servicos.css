@@ -143,6 +143,10 @@ header.transparent {
     font-weight: bold;
 }
 
+.mobile-card{
+    display: none;
+}
+
 .btn {
     font-size: 17px;
     background: transparent;
@@ -460,6 +464,68 @@ footer {
           opacity: 0.5;
         }
       }
+
+
+      .mobile-cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .mobile-card {
+        width: 75%;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        margin: 10px;
+        background-color: transparent;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        padding-left: 22%;
+        padding-top: 10%;
+        display: block;
+    }
+    
+    .mobile-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .mobile-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+    
+    
+    .mobile-card h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #ff6a00;
+    }
+    
+    .mobile-card p {
+        color: #fafafa;
+        padding-bottom: 17px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+
+    .mobile-cards-container h1{
+        color: #ff6a00;
+        padding-top: 14%;
+        font-size: 35px;
+        padding-right: 2%;
+    }
+   
+
+    #txtp{
+        color: #ffffff;
+        font-size: 22px;
+        padding: 15%;
+        padding-top: 6%;
+        padding-bottom: 5%;
+    }
 
 
 
