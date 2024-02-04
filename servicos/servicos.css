@@ -96,6 +96,11 @@ header.transparent {
     display: none;
 }
 
+
+
+
+
+
 @media screen and (max-width: 730px){
 
 
@@ -155,7 +160,7 @@ header.transparent {
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
-        padding-right: 23px;
+        
     }
 
     .mobile-menu .nav-item{
@@ -166,6 +171,5 @@ header.transparent {
     .open{
         display: block;
     }
+    
 }
-
-
