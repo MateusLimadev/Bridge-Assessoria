@@ -265,4 +265,8 @@ nav.transparent{
     .open{
         display: block;
     }
+
+    img{
+        display: none;
+    }
 }
