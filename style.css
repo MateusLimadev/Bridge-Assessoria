@@ -251,6 +251,42 @@ nav.transparent{
 }
 
 
+.artigopc{
+    background-color: #eeecdc;
+}
+.artigopc h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ff6a00;
+}
+
+.artigopc  p {
+    color: #d30000;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.artigopc h1{
+    color: #ff6a00;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 6%;
+}
+
+
+#txtp {
+    color: #000000;
+    font-size: 27px;
+    padding: 22%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.mobile-cards-container{
+    display: none;
+}
 
 
 
@@ -259,7 +295,7 @@ nav.transparent{
     background: transparent;
     border: none;
     padding: 1em 1.5em;
-    color: #fc7f26;
+    color: #ff6a00;
     text-transform: uppercase;
     position: relative;
     transition: 0.5s ease;
@@ -730,5 +766,65 @@ footer {
         padding-top: 20px;
     }
 
+    .mobile-cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mobile-card {
+        width: 75%;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        margin: 10px;
+        padding: 15px;
+        background-color: transparent;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .mobile-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .mobile-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+    
+    
+    .mobile-card h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #ff6a00;
+    }
+    
+    .mobile-card p {
+        color: #fafafa;
+        padding-bottom: 17px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+
+    .mobile-cards-container h1{
+        color: #ff6a00;
+        padding-top: 14%;
+        font-size: 35px;
+        padding-right: 2%;
+    }
    
+
+    #txtp{
+        color: #ffffff;
+        font-size: 22px;
+        padding: 15%;
+        padding-top: 6%;
+        padding-bottom: 5%;
+    }
+
+    .artigopc{
+        display: none;
+    }
 }
