@@ -587,9 +587,10 @@ footer {
 
 
     .top-mobile img {
-        width: 100%; /* Ajusta a largura da imagem para cobrir a largura da tela */
+        width: 100%;
         height: auto;
         opacity: 0.9;
+        padding-top: 15%;
     }
     
     .top-mobile {
