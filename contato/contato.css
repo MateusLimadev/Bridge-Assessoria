@@ -53,7 +53,7 @@ body {
 
 /* Estilo do botão de envio */
 input[type="submit"] {
-    background-color: #007bff;
+    background-color: #df740f;
     color: #fff;
     padding: 10px;
     border: none;
@@ -63,7 +63,7 @@ input[type="submit"] {
 
 /* Estilo do botão de envio ao passar o mouse sobre ele */
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #000000;
 }
 
 
