@@ -101,7 +101,7 @@ header.transparent {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 90px;
-    padding-top: 17%;
+    padding-top: 8%;
     background-color: #eeecdc;
     text-align: center;
 }
@@ -209,18 +209,19 @@ header.transparent {
     color: #ffffff;
     font-size: 60px;
     position: absolute;
-    top: 48%;
+    top: 32%;
     left: 16%;
 }
 
 .subtitle {
+    padding: 27%;
+    padding-bottom: 9%;
+    padding-top: 0%;
+    color: #ee600e;
+    font-size: 46px;
     text-align: center;
-    color: #ff6a00;
-    font-size: 39px;
-    position: absolute;
-    top: 130%;
-    left: 26%;
 }
+
 
 
 
@@ -238,7 +239,7 @@ header.transparent {
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 61%;
+    top: 45%;
     left: 2%;
 }
 
