@@ -5,24 +5,21 @@ if (isset($_POST['email']) && !empty($_POST['email'])) {
     $email = addslashes($_POST['email']);
     $mensagem = addslashes($_POST['mesage']);
 
- $to = "devmateuslima@outlook.com"
- $subject = "Contato - Bridge A.D"
- $body = "Nome:".$nome."\n"
-         "Email:".$email."\n"
-         "Mensagem:".$mensagem."\n"
+    $to = "devmateuslima@outlook.com";
+    $subject = "Contato - Bridge A.D";
+    $body = "Nome:" . $nome . "\n"
+         . "Email:" . $email . "\n"
+         . "Mensagem:" . $mensagem . "\n";
 
+    $header = "From: mateu.slima@outlook.com" . "\r\n"
+            . "Reply-to: " . $email . "\r\n"
+            . "X-Mailer: PHP/" . phpversion();
 
-$header = "From:mateu.slima@outlook.com"."\r"\n
-."Reply-to:".$email."\e\n"
-."X=Mailer:PHP/".phpversion();
-
-if(mail($to,$subject,$body,$header)){
-
-    echo("Email enviado com sucesso");
-}else{
-    echo("o Emailnão pode ser enviado ");
-}
-
+    if (mail($to, $subject, $body, $header)) {
+        echo "Email enviado com sucesso";
+    } else {
+        echo "O email não pode ser enviado";
+    }
 }
 
 ?>
