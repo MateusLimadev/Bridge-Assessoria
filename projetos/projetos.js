@@ -2,10 +2,10 @@ function menuShow(){
     let menuMobile = document.querySelector('.mobile-menu');
     if (menuMobile.classList.contains('open')){
         menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "imagens/iconemenu.svg"
+        document.querySelector('.icon').src = "../imagens/iconemenu.svg"
     } else{
         menuMobile.classList.add('open')
-        document.querySelector('.icon').src = "imagens/iconecancel.svg"
+        document.querySelector('.icon').src = "../imagens/iconecancel.svg"
     }
 }
 
@@ -48,3 +48,14 @@ function ajustarLarguraCards() {
     });
 }
 
+
+function showButton(card) {
+    const button = card.querySelector('.saiba-mais-btn');
+    button.style.opacity = 1;
+  }
+  
+  function hideButton(card) {
+    const button = card.querySelector('.saiba-mais-btn');
+    button.style.opacity = 0;
+  }
+  
