@@ -299,7 +299,15 @@ header.transparent {
 
 @media screen and (max-width: 730px){
 
-   #destaque-mobile{
+    .subtitle h2 {
+        color: #ffffff;
+        font-size: 86px;
+        text-align: center;
+        padding: 9%;
+        padding-top: 34%;
+    }
+   
+    #destaque-mobile{
     display: block;
    }
 
