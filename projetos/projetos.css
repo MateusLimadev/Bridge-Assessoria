@@ -97,6 +97,109 @@ header.transparent {
     display: none;
 }
 
+
+.cards-projetos{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    padding-top: 10%;
+    
+}
+
+.projeto-destaque {
+    position: relative;
+    overflow: hidden;
+    width: 71%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20%;
+    margin-left: 15%;
+}
+  
+  .projeto-destaque img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .projeto-destaque:hover img {
+    transform: scale(1.1);
+    filter: blur(3px);
+  }
+  
+  .projeto-destaque a {
+    position: relative;
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .saiba-mais-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px; /* ajuste o tamanho da fonte conforme necessário */
+    background-color: #ee600e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .projeto-destaque:hover .saiba-mais-btn {
+    opacity: 1;
+  }
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    width: 310px; 
+    height: 294px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px; /* adicione margens conforme necessário */
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover img {
+    transform: scale(1.1);
+    filter: blur(3px); /* Adiciona um desfoque à imagem ao passar o mouse */
+  }
+  
+  .saiba-mais-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 16px;
+    font-size: 14px; /* ajuste o tamanho da fonte conforme necessário */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover .saiba-mais-btn {
+    opacity: 1;
+  }
+  
+  
+
 @media screen and (max-width: 730px){
 
 
