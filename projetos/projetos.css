@@ -112,9 +112,10 @@ header.transparent {
     width: 71%;
     border: 1px solid #ccc;
     border-radius: 8px;
-    margin-top: 20%;
-    margin-left: 15%;
+    margin-top: 56px; /* Ajuste a distância superior conforme necessário */
+    margin-left: 15%; /* Ajuste a distância à esquerda conforme necessário */
 }
+
   
   .projeto-destaque img {
     width: 100%;
@@ -177,6 +178,8 @@ header.transparent {
     transform: scale(1.1);
     filter: blur(3px); /* Adiciona um desfoque à imagem ao passar o mouse */
   }
+
+
   
   .saiba-mais-btn {
     position: absolute;
@@ -185,7 +188,7 @@ header.transparent {
     transform: translate(-50%, -50%);
     padding: 8px 16px;
     font-size: 14px; /* ajuste o tamanho da fonte conforme necessário */
-    background-color: #007BFF;
+    background-color: #ee600e;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -198,11 +201,115 @@ header.transparent {
     opacity: 1;
   }
   
-  
+
+ .subtitle{
+    background-color: transparent;
+ }
+ 
+ .subtitle h2 {
+    color: #ffffff;
+    font-size: 86px;
+    text-align: center;
+    padding: 9%;
+}
+
+
+ a{
+    text-decoration: none;
+ }
+    footer {
+        background-color: #0D0F12;
+        color: #fff;
+        padding: 30px 0;
+        text-align: center;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .footer-section {
+        max-width: 300px;
+    }
+    
+    .footer-section h2 {
+        color: #D96725;
+        margin-bottom: 10px;
+    }
+    
+    .footer-section p {
+        font-size: 13px;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+    
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-section a {
+        color: #fff;
+        text-decoration: none;
+        
+    }
+    
+    .footer-bottom {
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 1px solid #D96725;
+    }
+    
+    .footer-bottom p {
+        font-size: 11px;
+    }
+    
+    #devsession{
+        text-decoration: none;
+        color: #D96725;
+        
+    }
+
+    #logoinsta{
+        width: 29px;
+        
+    }
+    
+    #logowhats{
+        width: 29px;
+        
+    }
+    
+    #logotiktok{
+        width: 29px;
+        
+    }
+    
+    #logoemail{
+        width: 29px;
+        
+    }
+
+    #destaque-mobile{
+        display: none;
+    }
+    
 
 @media screen and (max-width: 730px){
 
+   #destaque-mobile{
+    display: block;
+   }
 
+   .redes-sociais{
+    padding-top: 10px;
+   }
+   
+    .projeto-destaque{
+        display: none;
+    }
 
     .top-content{
         display: none;
@@ -271,5 +378,4 @@ header.transparent {
         display: block;
     }
 }
-
 
