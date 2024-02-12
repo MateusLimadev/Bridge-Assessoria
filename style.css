@@ -449,7 +449,7 @@ nav.transparent{
 
 .quatro-imagens img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px;
     transition: opacity 0.3s ease-in-out;
 }
