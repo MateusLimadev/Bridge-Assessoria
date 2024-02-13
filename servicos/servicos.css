@@ -1,10 +1,17 @@
 @font-face {
     font-family: 'futura-light';
     src: url(../fonts/futura/futura\ light\ bt.ttf)
+
+}
+
+@font-face {
+    font-family: 'futura-book';
+    src: url(../fonts/futura/Futura\ Book\ font.ttf);
 }
 
 :root {
     --futuraL: 'futura-light'; 
+    --futurab: 'futura-book';
 }
 
 *{
@@ -212,26 +219,37 @@ header.transparent {
     
   }
 
-  .top-frase h1 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 5vw;
-    position: absolute;
-    top: 32%;
-    left: 14%;
+  .top-frase {
+    position: relative;
+    width: auto; /* Ajuste conforme necessário */
+    height: auto; /* Ajuste conforme necessário */
 }
 
-.top-frase p {
-    text-align: center;
-    padding: 16%;
-    padding-bottom: 0;
-    padding-top: 10px;
-    color: white;
-    font-size: 19px;
+.texto-sobre-imagem {
     position: absolute;
-    top: 45%;
-    left: 2%;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
 }
+
+.texto-sobre-imagem h1{
+    padding-bottom: 30px;
+    padding-top: 10%;
+    font-size: 51px;
+    
+}
+
+.texto-sobre-imagem p{
+    font-size: 16px;
+    font-family: var(--futurab);
+    font-weight: 500;
+    line-height: 1.4;
+    
+    
+}
+
 
 .subtitle {
     padding: 27%;
