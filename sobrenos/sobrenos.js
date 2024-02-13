@@ -20,22 +20,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+    // Obtém o elemento de navegação (nav)
+    var nav = document.querySelector("header");
+
+    // Adiciona a classe 'transparent' por padrão
+    nav.classList.add("transparent");
+
     // Adiciona um evento de rolagem à janela
     window.addEventListener("scroll", function () {
         // Obtém a posição atual de rolagem
         var scrollPosition = window.scrollY;
 
-        // Obtém o elemento de navegação (nav)
-        var nav = document.querySelector("header");
-
         // Adiciona ou remove a classe 'transparent' com base na posição de rolagem
         if (scrollPosition === 0) {
-            nav.classList.remove("transparent");
-        } else {
             nav.classList.add("transparent");
+        } else {
+            nav.classList.remove("transparent");
         }
     });
 });
+
 
 
 // Ajusta a largura dos cards com base no tamanho da janela de visualização

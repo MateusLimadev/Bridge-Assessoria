@@ -54,8 +54,12 @@ header {
     z-index: 1000;
 }
 
+.nav-bar{
+    transition: background-color 0.5s ease; /* 0.5s é a duração da transição, ajuste conforme necessário */
+}
+
 nav.transparent{
-    background-color: rgba(13, 15, 18, 0.733); /* Ajuste a cor de fundo e a transparência conforme necessário */
+    background-color: rgba(13, 15, 18, 0); /* Ajuste a cor de fundo e a transparência conforme necessário */
 }
 
 .nav-list{
@@ -81,7 +85,7 @@ nav.transparent{
 }
 
 .nav-link:hover{
-    color: #D96725;
+    color:  #f98c33ba;
 }
 
 .mobile-menu-icon{
@@ -93,6 +97,10 @@ nav.transparent{
     display: none;
 }
 
+#logoimg{
+    width: 80%;
+    padding: 10px;
+}
 
 .img-back img {
     width: 100%; /* Ajusta a largura da imagem para cobrir a largura da tela */
@@ -101,6 +109,7 @@ nav.transparent{
 
 .img-back {
     position: relative;
+    opacity: 90%;
 }
 
 .img-back button {
@@ -732,7 +741,7 @@ footer {
     }
 
     #logoimg{
-        width: 70%;
+        width: 60%;
         padding-top: 10px;
     }
     
