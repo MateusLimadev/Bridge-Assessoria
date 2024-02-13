@@ -215,10 +215,22 @@ header.transparent {
   .top-frase h1 {
     text-align: center;
     color: #ffffff;
-    font-size: 60px;
+    font-size: 4vw;
     position: absolute;
     top: 32%;
-    left: 16%;
+    left: 21%;
+}
+
+.top-frase p {
+    text-align: center;
+    padding: 16%;
+    padding-bottom: 0;
+    padding-top: 10px;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 45%;
+    left: 2%;
 }
 
 .subtitle {
@@ -239,17 +251,7 @@ header.transparent {
     opacity: 31.7%;
   }
 
-  .top-frase p {
-    text-align: center;
-    padding: 16%;
-    padding-bottom: 0;
-    padding-top: 38px;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 45%;
-    left: 2%;
-}
+
 
 
 footer {
