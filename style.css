@@ -3,6 +3,11 @@
     src: url(fonts/futura/futura\ light\ bt.ttf);
 }
 
+@font-face {
+    font-family: 'nasalization';
+    src: url(fonts/nasalization/nasalization-rg.otf);
+}
+
 :root {
     --futuraL: 'futura-light'; 
 }
@@ -282,6 +287,8 @@ nav.transparent{
     font-size: 50px;
     text-align: center;
     padding-top: 6%;
+    font-family: 'nasalization';
+
 }
 
 
