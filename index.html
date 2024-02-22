@@ -3,259 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>Bridge | Assessoria Digital</title>
     <link rel="stylesheet" href="style.css">
-    <title>Bridge Assessoria Digital</title>
+    <link rel="stylesheet" href="responsive.css">
 </head>
-<body>
-    <header>
-        <nav class="nav-bar">
-            <div>
-                <a href="index.html"><img id="logoimg" src="imagens/logobridge.svg" alt=""></a>
+
+<header id="header">
+    <img id="logotipo" src="assets/imagens/logobridge.svg" alt="logotipo">
+    <nav id="nav">
+         <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburguer"></span>
+        </button>
+        <ul id="menu" role="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <img id="bannerPC" src="assets/imagens/bannerPC.png" alt="bannerPC">
+    <img id="bannerMobile" src="assets/imagens/bannerMobile.png" alt="bannerMobile">
+        <h1>venha</h1>
+        <h3>ser</h3>
+        <h2>digital</h2>
+
+</div>
+
+
+    <body>
+        <main id="maincontent">
+            <h1>Conecte-se ao sucesso digital !</h1><br>
+            <p>Conecte-se aos serviços personalizados que impulsionarão o seu negócio. Juntos, construiremos uma narrativa única para potencializar o seu sucesso digital.</p>
+        </main>
+
+        <div class="cards">
+            <div id="card1">
+                <img src="assets/imagens/cardimgs/idmarca.png" alt="serviço1" id="img1">
+                <h1>Identidade de Marca.</h1>
+                <p>Criamos uma identidade visual única, refletindo a personalidade da sua marca com elementos visuais, storytelling e design digital para uma presença coesa e memorável.</p>
+                <a href="#">Saiba mais.</a>
             </div>
-            <div class="nav-list" >
-                <ul>
-                    
-                    <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"> <a href="servicos/servicos.html" class="nav-link">Serviços</a></li>
-                    <li class="nav-item"> <a href="projetos/projetos.html" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"> <a href="contato/contato.html" class="nav-link">Contato</a></li>
-                    <li class="nav-item"> <a href="sobrenos/sobrenos.html" class="nav-link">Sobre nós </a></li>
-                    
-                </ul>
+            
+             <div id="card2">
+                <img src="assets/imagens/cardimgs/socialmedia.png" alt="serviço2" id="img2">
+                <h1>Social Media.</h1>
+                <p>Aprimoramos a mensagem, maximizando impacto com estratégias inovadoras e otimização de campanhas de mídia, focando em engajamento e resultados excepcionais.</p>
+                <a href="#">Saiba mais.</a>
             </div>
-           <div class="mobile-menu-icon">
-            <button onclick="menuShow()">
-                <img  class="icon" src="imagens/iconemenu.svg">
-            </button>
-           </div>
-        </nav>
 
-
-        <div class="mobile-menu">
-            <ul>
-                    <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"> <a href="servicos/servicos.html" class="nav-link">Serviços</a></li>
-                    <li class="nav-item"> <a href="projetos/projetos.html" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"> <a href="contato/contato.html" class="nav-link">Contato</a></li>
-                    <li class="nav-item"> <a href="sobrenos/sobrenos.html" class="nav-link">Sobre </a></li>
-                
-            </ul>
-        </div>
-
-        <div class="img-back">
-            <img src="imagens/background-bridge.jpg" alt="bridgeassessoriadigital">
-            <a href="sobrenos/sobrenos.html"><button class="animated-button">
-                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                  ></path>
-                </svg>
-               <span class="text">Sobre Nós</span>
-                <span class="circle"></span>
-                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                  ></path>
-                </svg>
-              </button></a>
-              
-              
-        </div>
-    </header>
-
-
-
-    <div class="top-mobile">
-        <img src="imagens/background-bridge-mobile.jpg" alt="bridgeassessoriadigital">
-            <a href="sobrenos/sobrenos.html">
-                <button class="animated-button">
-                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                    <span class="text">Sobre Nós</span>
-                    <span class="circle"></span>
-                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                  </button>
-            </a>
-            
-        </div>
-
-    <article class="artigopc">
-        <h1>Conecte-se  ao sucesso digital !</h1>
-        <p id="txtp">Conecte-se aos serviços personalizados que impulsionarão o seu negócio. Juntos, construiremos uma narrativa única para potencializar o seu sucesso digital.</p>
-    </article>
-
-    <section class="cards-container" id="cardscontainer">
-         
-        <div class="card">
-            <img src="imagens/id-marca.jpg" alt="Identidade de Marca"  loading="lazy" >
-            <h3>Identidade de Marca</h3>
-            <p>Desenvolvemos uma identidade visual única, refletindo a personalidade da sua marca com elementos visuais, storytelling e design digital para uma presença coesa e memorável.</p>
-            <a href="servicos/servicos.html"><button class="btn">Ver mais</button></a>
-            
-        </div>
-    
-        <div class="card">
-            <img src="imagens/gestaodemidia.jpg" alt="Gestão de Mídia" loading="lazy" >
-            <h3>Gestão de Mídia</h3>
-            <p id="p2">Aprimoramos a mensagem, maximizando impacto com estratégias inovadoras e otimização de campanhas de mídia, focando em engajamento e resultados excepcionais.</p>
-            <a href="servicos/servicos.html"><button class="btn">Ver mais</button></a>
-
-            
-        </div>
-
-        <div class="card">
-            <img src="imagens/crescimentoestrategico.jpg" alt="Crescimento Estratégico" loading="lazy" >
-            <h3>Crescimento Estratégico</h3>
-            <p id="p3">Impulsionamos o seu negócio, desenvolvendo estratégias inteligentes para ampliar a presença e promover o crescimento sustentável no mercado.</p>
-            <a href="servicos/servicos.html"><button class="btn">Ver mais</button></a>
-            
-        </div>
-
-
-        <div class="card">
-            <img src="imagens/visibilidadeonline.jpg" alt="Visibilidade Online" loading="lazy" >
-            <h3>Visibilidade Online</h3>
-            <p>Elevamos a visibilidade online da sua marca, otimizando para mecanismos de busca e tráfego pago, garantindo notoriedade digital e atraindo tráfego qualificado.</p>
-            <a href="servicos/servicos.html"><button class="btn">Ver mais</button></a>
-            
-        </div>
-
-    </section>
-
-    <section class="mobile-cards-container" id="mobile-cards-container">
-
-        <h1>Conecte-se <br> ao sucesso digital !</h1>
-        <p id="txtp">Conecte-se aos serviços personalizados que impulsionarão o seu negócio. Juntos, construiremos uma narrativa única para potencializar o seu sucesso digital.</p>
-        <div class="mobile-card">
-            <img src="imagens/id-marca.jpg" alt="Identidade de Marca" loading="lazy">
-            <h3>Identidade de Marca</h3>
-            <p>Desenvolvemos uma identidade visual única, refletindo a personalidade da sua marca com elementos visuais, storytelling e design digital para uma presença coesa e memorável.</p>
-            <a href="servicos/servicos.html"><button class="btn">Ver mais</button></a>
-        </div>
-    
-        <div class="mobile-card">
-            <img src="imagens/gestaodemidia.jpg" alt="Gestão de Mídia" loading="lazy">
-            <h3>Gestão de Mídia</h3>
-            <p>Aprimoramos a mensagem, maximizando impacto com estratégias inovadoras e otimização de campanhas de mídia, focando em engajamento e resultados excepcionais.</p>
-            <a href="servicos/servicos.html"><button class="btn">Ver mais</button></a>
-        </div>
-
-        <div class="mobile-card">
-            <img src="imagens/crescimentoestrategico.jpg" alt="Gestão de Mídia" loading="lazy">
-            <h3>Crescimento Estratégico</h3>
-            <p>Impulsionamos o seu negócio, desenvolvendo estratégias inteligentes para ampliar a presença e promover o crescimento sustentável no mercado.</p>
-            <a href="servicos/servicos.html"><button class="btn">Ver mais</button></a>
-        </div>
-
-
-        <div class="mobile-card">
-            <img src="imagens/visibilidadeonline.jpg" alt="Gestão de Mídia" loading="lazy">
-            <h3>Visibilidade Online</h3>
-            <p>Elevamos a visibilidade online da sua marca, otimizando para mecanismos de busca e tráfego pago, garantindo notoriedade digital e atraindo tráfego qualificado.</p>
-            <a href="servicos/servicos.html"><button class="btn">Ver mais</button></a>
-        </div>
-    
-        
-    
-    </section>
-
-
-    <section class="projeto-destaque">
-        <a href="https://www.instagram.com/bridgeassessoriadigital/"> <img id="arvoredoprev" src="imagens/previa-projetos/arvoredo.jpg" alt="arvoredoprev"></a>
-        <h2>Arvoredo</h2>
-        <h3>Design Digital</h3>
-    </section>
-
-
-    <section class="projetos-mobile">
-        <a href="https://www.instagram.com/bridgeassessoriadigital/"> <img id="projetos-mobile" src="imagens/previa-projetos/aluma-construcao.jpg" alt="arvoredoprev"></a>
-        <h2>Aluma Construção</h2>
-        <h3>Identidade Visual</h3>
-
-        <a href="https://www.instagram.com/bridgeassessoriadigital/"> <img id="projetos-mobile" src="imagens/previa-projetos/germano-portas.jpg" alt="arvoredoprev"></a>
-        <h2>Germano Portas</h2>
-        <h3>Identidade Visual</h3>
-
-
-        <a href="https://www.instagram.com/bridgeassessoriadigital/"> <img id="projetos-mobile" src="imagens/previa-projetos/tavares.jpg" alt="arvoredoprev"></a>
-        <h2>Tavares</h2>
-        <h3>Design Digital</h3>
-
-        <a href="https://www.instagram.com/bridgeassessoriadigital/"> <img id="projetos-mobile" src="imagens/previa-projetos/hb-soundsistem.jpg" alt="arvoredoprev"></a>
-        <h2>HB Sound System</h2>
-        <h3>Design Digital</h3>
-
-
-    </section>
-
-    <section class="quatro-imagens">
-        <div class="imagem-container">
-            <a href="https://www.instagram.com/bridgeassessoriadigital/"><img src="imagens/previa-projetos/aluma-construcao.jpg" alt="Imagem 1"></a>
-            <h2>Aluma Construção</h2>
-            <h3>Identidade Visual</h3>
-        </div>
-    
-        <div class="imagem-container">
-            <a href="https://www.instagram.com/bridgeassessoriadigital/"><img src="imagens/previa-projetos/germano-portas.jpg" alt="Imagem 2"></a>
-            <h2>Germano Portas</h2>
-            <h3>Identidade Visual</h3>
-        </div>
-    
-        <div class="imagem-container">
-            <a href="https://www.instagram.com/bridgeassessoriadigital/"><img src="imagens/previa-projetos/hb-soundsistem.jpg" alt="Imagem 3"></a>
-            <h2>HB Sound <br> System</h2>
-            <h3>Design Digital</h3>
-        </div>
-    
-        <div class="imagem-container">
-            <a href="https://www.instagram.com/bridgeassessoriadigital/"><img src="imagens/previa-projetos/tavares.jpg" alt="Imagem 4"></a>
-            <h2>Tavares</h2>
-            <h3>Design Digital</h3>
-        </div>
-    </section>
-    
-
-       <!--Botão whatsapp-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://www.seusite.com.br/whatsapp/" target="_blank">
-    <div class="btn-whatsapp pulsaDelay"><i class="fa fa-whatsapp"></i></div>
-</a>
-<!--Botão whatsapp-->
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h2>Horários</h2>
-                <p>De Segunda a Sexta-feira das 08 as 18hrs.</p>
+             <div id="card3">
+                <img src="assets/imagens/cardimgs/crescimento.png" alt="serviço3" id="img3">
+                <h1>Crescimento Estratégico.</h1>
+                <p>Impulsionamos o seu negócio, desenvolvendo estratégias inteligentes para ampliar a presença e promover o crescimento sustentável no mercado.</p>
+                <a href="#">Saiba mais.</a>
             </div>
-            <div class="footer-section contact">
-                <h2>Contato</h2>
-                <p>Email: Bridgeassessoriadigital@gmail.com<br>Telefone: (11) 95844-1225 ou (11) 99321-1407
-                    </p>
+
+             <div id="card4">
+                <img src="assets/imagens/cardimgs/visibilidade.png" alt="serviço4" id="img4">
+                <h1>Visibilidade Online.</h1>
+                <p>Elevamos a visibilidade online da sua marca, otimizando para mecanismos de busca e tráfego pago, garantindo notoriedade digital e atraindo tráfego qualificado.</p>
+                <a href="#">Saiba mais.</a>
             </div>
+
+             
+        </div>
+
+        <div class="sobreservicos">
+            <div id="servicostxt">
+                <h1>Serviços e Processos Estratégicos</h1>
+                <p>A Bridge adota uma abordagem meticulosa no desenvolvimento de projetos, onde cada etapa é cuidadosamente estruturada para garantir um propósito definido desde o início até a conclusão.<br> Nosso ecossistema de serviços e processos é projetado para promover uma execução objetiva, assegurando que cada fase do projeto seja conduzida de maneira eficiente e alinhada aos objetivos estratégicos da empresa.</p>
+                <h3>Conheça nossos serviços</h3>
+            </div>
+
+            <div class="loader"></div>
         </div>
           
-        <div class="redes-sociais">
-            <a href="https://www.instagram.com/bridgeassessoriadigital/"><img id="logoinsta" src="imagens/redes-sociais/instagram.png" alt="instagram"></a>
-            <img id="logowhats" src="imagens/redes-sociais/whatsapp.png" alt="whatsapp">
-            <img id="logotiktok" src="imagens/redes-sociais/tiktok.png" alt="tiktok">
-            <a href="mailto:bridgeassessoriadigital@gmail.com?subject=Vamos fazer um novo projeto?!"><img id="logoemail" src="imagens/redes-sociais/email.png" alt="email"></a>
+    </div>
 
+    <div class="projects" >
+        <div id="projectdestaque">
+            <img src="assets/imagens/projetos/destaque.jpg" alt="projectdestaque">
+            <h1>Projeto x</h1>
+            <p>Saiba mais.</p>
         </div>
-   
-        <div class="footer-bottom">
-            <p>&copy; 2024 Bridge Assessoria Digital | Desenvolvido por <a id="devsession" href="https://github.com/MateusLimadev">Mateus lima</a></p>
+
+        <div id="outhersprojects">
+
+           <div id="projeto1">
+            <img src="assets/imagens/projetos/1.png" alt="project1">
+            <h1>Projeto x</h1>
+            <p>Saiba mais.</p>
+           </div>
+
+           <div id="projeto2">
+            <img src="assets/imagens/projetos/2.png" alt="project2">
+            <h1>Projeto x</h1>
+            <p>Saiba mais.</p>
+           </div>
+
+           <div id="projeto3">
+            <img src="assets/imagens/projetos/3.png" alt="project3">
+            <h1>Projeto x</h1>
+            <p>Saiba mais.</p>
+           </div>
+
+           <div id="projeto4">
+            <img src="assets/imagens/projetos/4.png" alt="project4">
+            <h1>Projeto x</h1>
+            <p>Saiba mais.</p>
+           </div>
+
+           <div id="projeto5">
+            <img src="assets/imagens/projetos/5.png" alt="project5">
+            <h1>Projeto x</h1>
+            <p>Saiba mais.</p>
+           </div>
+
+           <div id="projeto6">
+            <img src="assets/imagens/projetos/6.png" alt="project6">
+            <h1>Projeto x</h1>
+            <p>Saiba mais.</p>
+           </div>
         </div>
-    </footer>
+    </div>
 
 
     <script src="script.js"></script>

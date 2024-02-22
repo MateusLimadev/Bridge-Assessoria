@@ -1,57 +1,62 @@
-function menuShow(){
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')){
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "imagens/iconemenu.svg"
-    } else{
-        menuMobile.classList.add('open')
-        document.querySelector('.icon').src = "imagens/iconecancel.svg"
+const btnmobile = document.getElementById('btn-mobile');
+
+// Adiciona a classe 'transparent' inicialmente
+var header = document.getElementById('header');
+header.classList.add('transparent');
+
+function toggleMenu(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+    const active = nav.classList.contains('active');
+    event.currentTarget.setAttribute('aria-expanded', active);
+
+    if (active) {
+        event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+    } else {
+        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
     }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    var mobileMenuButton = document.querySelector(".mobile-menu-icon button");
-    var body = document.body;
+btnmobile.addEventListener('click', toggleMenu);
+btnmobile.addEventListener('touchstart', toggleMenu);
 
-    mobileMenuButton.addEventListener("click", function () {
-        body.classList.toggle("menu-opened");
-    });
-});
+window.addEventListener('scroll', function () {
+    var scrollPosition = window.scrollY;
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Obtém o elemento de navegação (nav)
-    var nav = document.querySelector("nav");
-
-    // Adiciona a classe 'transparent' por padrão
-    nav.classList.add("transparent");
-
-    // Adiciona um evento de rolagem à janela
-    window.addEventListener("scroll", function () {
-        // Obtém a posição atual de rolagem
-        var scrollPosition = window.scrollY;
-
-        // Adiciona ou remove a classe 'transparent' com base na posição de rolagem
-        if (scrollPosition === 0) {
-            nav.classList.add("transparent");
-        } else {
-            nav.classList.remove("transparent");
-        }
-    });
+    // Adiciona ou remove a classe 'transparent' com base no scroll
+    if (scrollPosition > 0) {
+        header.classList.remove('transparent');
+    } else {
+        header.classList.add('transparent');
+    }
 });
 
 
 
-// Ajusta a largura dos cards com base no tamanho da janela de visualização
-function ajustarLarguraCards() {
-    const cardsContainer = document.getElementById('cardscontainer');
-    const cards = cardsContainer.querySelectorAll('.card');
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.querySelector(".carousel");
+  let currentIndex = 0;
 
-    cards.forEach(card => {
-        card.style.maxWidth = `${window.innerWidth / 4}px`; // Dividindo por 4 para mostrar inicialmente 4 cards
-    });
-}
+  function showImage(index) {
+    const transformValue = -index * 100 + "%";
+    carousel.style.transform = "translateX(" + transformValue + ")";
+  }
 
-// Executa a função ao carregar a página e ao redimensionar a janela
-window.addEventListener('load', ajustarLarguraCards);
-window.addEventListener('resize', ajustarLarguraCards);
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % carousel.children.length;
+    showImage(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
+    showImage(currentIndex);
+  }
+
+  setInterval(nextSlide, 3000); // Trocar a imagem a cada 3 segundos (ajuste conforme necessário)
+});
+
+
+
+
+
