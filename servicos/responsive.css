@@ -55,6 +55,7 @@
     color: var(--cor-primaria);
     font-family: var(--font-principal-book);
     margin-bottom: 20px;
+    font-size: 30px;
     
     
 }
@@ -62,6 +63,7 @@
  .mobilecontent p {
    color: var(--cor-primaria);
    font-family: var(--font-principal-book);
+   font-size: 16px;
 }
 
 
@@ -238,14 +240,14 @@
      #bannerMobile{
         display: block;
         max-width: 100%;
-        opacity: 60%;
+        opacity: 40%;
     }
 
-  .text-container p{
-    display: none;
+
+   .mobilecontent {
+        top: 21%;
+        left: 10%;
 }
-
-
 
 
 
@@ -253,8 +255,7 @@
 }
 
     
-    
-
+  
 
 
 
