@@ -1,226 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge | Assessoria Digital</title>
     <link rel="stylesheet" href="servicos.css">
-    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
-    <title>Bridge Assessoria Digital</title>
+    <link rel="shortcut icon" href="/assets/imagens/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div>
-                <a href="../index.html"><img id="logoimg" src="../imagens/logobridge.svg" alt=""></a>
-            </div>
-            <div class="nav-list" >
-                <ul>
-                    
-                    <li class="nav-item"> <a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"> <a href="../servicos/servicos.html" class="nav-link">Serviços</a></li>
-                <li class="nav-item"> <a href="../projetos/projetos.html" class="nav-link">Projetos</a></li>
-                <li class="nav-item"> <a href="../contato/contato.html" class="nav-link">Contato</a></li>
-                <li class="nav-item"> <a href="sobrenos.html" class="nav-link">Sobre nós</a></li>
-                    
-                </ul>
-            </div>
-           <div class="mobile-menu-icon">
-            <button onclick="menuShow()">
-                <img  class="icon" src="../imagens/iconemenu.svg">
-            </button>
-           </div>
-        </nav>
+    <header id="header">
+    <img id="logotipo" src="/assets/imagens/logobridge.svg" alt="logotipo">
+    <nav id="nav">
+         <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburguer"></span>
+        </button>
+        <ul id="menu" role="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="servicos/servicos.html">Serviços</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <img id="bannerPC" src="/imagens/banner-servicos.jpg" alt="bannerPC">
+    <img id="bannerMobile" src="assets/imagens/bannerMobile.png" alt="bannerMobile">
+      <div class="text-container">
+          <h1>Elevando empresas,<br> Criando Valor.</h1>
+          <p>A presença marcante de uma identidade visual bem definida desempenha um papel vital na qualidade dos negócios. Ao estabelecer uma sólida base visual, a marca conquista clareza na comunicação, promovendo uma percepção mais positiva e conferindo consistência ao seu conteúdo de maneira regular.</p>
+      </div>
+</div>
 
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"> <a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"> <a href="../servicos/servicos.html" class="nav-link">Serviços</a></li>
-                <li class="nav-item"> <a href="../projetos/projetos.html" class="nav-link">Projetos</a></li>
-                <li class="nav-item"> <a href="../contato/contato.html" class="nav-link">Contato</a></li>
-                <li class="nav-item"> <a href="sobrenos.html" class="nav-link">Sobre nós</a></li>
-                
-            </ul>
-        </div>
-    </header>
-    </div>
-
-
-    <div class="top-frase-mobile">
-        <img src="../imagens/bannerservicos-mobile.jpg" alt="crescimento">
-        <h1>Elevando Empresas, Criando Valor.</h1>
-        <h3>Conheça<br>nossos serviços</h3>
-            <div class="scrolldown" style="--color: skyblue">
-                <div class="chevrons">
-                    <div class="chevrondown"></div>
-                    <div class="chevrondown"></div>
-                </div>
-            </div>
-        
-        
-        </div>
-
-          
-    </div>
-
-    <div class="top-frase">
-        <img src="../imagens/banner-servicos.jpg" alt="crescimento">
-        <div class="texto-sobre-imagem">
-            <h1>Elevando Empresas,<br> Criando Valor.</h1>
-            <p>A construção de uma identidade de marca robusta desempenha um papel crucial na excelência dos negócios. Uma identidade visual bem estabelecida não apenas comunica clareza, mas também cria uma percepção positiva em torno da marca. A consistência na mensagem fortalece a presença, transformando a visão da marca em algo tangível e significativo.</p>
-        </div>
-    </div>
-    
-
-    <section class="cards-container" id="cardscontainer">
-
-        <h2 class="subtitle">Conheça nossos serviços</h2>
-       
-        <div class="card">
-            <img src="../imagens/id-marca.jpg" alt="Identidade de Marca"  loading="lazy" >
-            <h3>Identidade Visual</h3>
-            <p>Transformamos a personalidade única da sua marca em uma experiência visual memorável. Criamos uma identidade que não apenas se destaca, mas também conta a história da sua empresa.
-            </p>
-            <button class="btn">Orçamento</button>
-            
-        </div>
-    
-        <div class="card">
-            <img src="../imagens/gestaodemidia.jpg" alt="Gestão de Mídia" loading="lazy" >
-            <h3>Social Mídia</h3>
-            <p id="p2">Maximizamos o impacto da sua mensagem. Com estratégias inovadoras, otimizamos cada campanha de mídia para alcançar o público certo no momento certo, gerando engajamento e resultados excepcionais.
-            </p>
-            <button class="btn">Orçamento</button>
-
-            
-        </div>
-
-        <div class="card">
-            <img src="../imagens/crescimentoestrategico.jpg" alt="Crescimento Estratégico" loading="lazy" >
-            <h3>Estratégia de Alavancagem</h3>
-            <p id="p3">Impulsionamos o seu negócio para novas alturas. Desenvolvemos estratégias inteligentes que não apenas aumentam sua presença, mas também impulsionam o crescimento sustentável, proporcionando vantagem competitiva no mercado.
-            </p>
-            <button class="btn">Orçamento</button>
-            
-        </div>
-
-
-        <div class="card">
-            <img src="../imagens/seo-trafpago.jpg" alt="Visibilidade Online" loading="lazy" >
-            <h3>SEO/Tráfego Pago</h3>
-            <p>Elevamos a visibilidade online da sua marca. Através de otimização para mecanismos de busca e estratégias de tráfego pago, garantimos que sua presença digital não passe despercebida, aumentando o tráfego qualificado.
-            </p>
-            <button class="btn">Orçamento</button>
-            
-        </div>
-
-        <div class="card">
-            <img src="../imagens/visibilidadeonline.jpg" alt="Visibilidade Online" loading="lazy" >
-            <h3>Performance Marketing</h3>
-            <p>Mais do que campanhas, criamos experiências envolventes. Nosso foco é impulsionar o desempenho, gerando resultados tangíveis. Cada campanha é uma jornada estratégica que leva seus clientes a uma conexão mais profunda com sua marca.
-
-            </p>
-            <button class="btn">Orçamento</button>
-            
-        </div>
-
-        
-        <div class="card">
-            <img src="../imagens/design-digital.jpg" alt="Visibilidade Online" loading="lazy" >
-            <h3>Design Digital</h3>
-            <p>Criamos experiências visuais que deixam uma marca duradoura. Dos pixels à emoção, nossos designs digitais não apenas atraem, mas também envolvem seu público, proporcionando uma presença online única e inesquecível.
-
-            </p>
-            <button class="btn">Orçamento</button>
-            
-        </div>
-    </section>
-
-    <div class="mobile-card">
-        <img src="../imagens/id-marca.jpg" alt="Identidade de Marca" loading="lazy">
-        <h3>Identidade Visual
-        </h3>
-        <p>Transformamos a personalidade única da sua marca em uma experiência visual memorável. Criamos uma identidade que não apenas se destaca, mas também conta a história da sua empresa.
-        </p>
-        <button class="btn">Orçamento</button>
-    </div>
-
-    <div class="mobile-card">
-        <img src="../imagens/gestaodemidia.jpg" alt="Gestão de Mídia" loading="lazy">
-        <h3>Social Mídia</h3>
-        <p>Aprimoramos a mensagem, maximizando impacto com estratégias inovadoras e otimização de campanhas de mídia, focando em engajamento e resultados excepcionais.</p>
-        <button class="btn">Orçamento</button>
-    </div>
-
-    <div class="mobile-card">
-        <img src="../imagens/crescimentoestrategico.jpg" alt="Gestão de Mídia" loading="lazy">
-        <h3>Estratégia de Alavancagem</h3>
-        <p>Impulsionamos o seu negócio para novas alturas. Desenvolvemos estratégias inteligentes que não apenas aumentam sua presença, mas também impulsionam o crescimento sustentável, proporcionando vantagem competitiva no mercado.
-        </p>
-        <button class="btn">Orçamento</button>
-    </div>
-
-
-    <div class="mobile-card">
-        <img src="../imagens/seo-trafpago.jpg" alt="Gestão de Mídia" loading="lazy">
-        <h3>SEO/Tráfego Pago</h3>
-        <p>Elevamos a visibilidade online da sua marca. Através de otimização para mecanismos de busca e estratégias de tráfego pago, garantimos que sua presença digital não passe despercebida, aumentando o tráfego qualificado.
-        </p>
-        <button class="btn">Orçamento</button>
-    </div>
-
-    <div class="mobile-card">
-        <img src="../imagens/visibilidadeonline.jpg" alt="Gestão de Mídia" loading="lazy">
-        <h3>Performance Marketing</h3>
-        <p>Mais do que campanhas, criamos experiências envolventes. Nosso foco é impulsionar o desempenho, gerando resultados tangíveis. Cada campanha é uma jornada estratégica que leva seus clientes a uma conexão mais profunda com sua marca.
-
-        </p>
-        <button class="btn">Orçamento</button>
-    </div>
-
-    <div class="mobile-card">
-        <img src="../imagens/design-digital.jpg" alt="Gestão de Mídia" loading="lazy">
-        <h3>Design Digital</h3>
-        <p>Criamos experiências visuais que deixam uma marca duradoura. Dos pixels à emoção, nossos designs digitais não apenas atraem, mas também envolvem seu público, proporcionando uma presença online única e inesquecível.
-        </p>
-        <button class="btn">Orçamento</button>
-    </div>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h2>Horários</h2>
-                <p>De Segunda a Sexta-feira das 08 as 18hrs.</p>
-            </div>
-            <div class="footer-section contact">
-                <h2>Contato</h2>
-                <p>Email: Bridgeassessoriadigital@gmail.com<br>Telefone: (11) 95844-1225 ou (11) 99321-1407
-                    </p>
-            </div>
-        </div>
-          
-        <div class="redes-sociais">
-            <a href="https://www.instagram.com/bridgeassessoriadigital/"><img id="logoinsta" src="../imagens/redes-sociais/instagram.png" alt="instagram"></a>
-            <img id="logowhats" src="../imagens/redes-sociais/whatsapp.png" alt="whatsapp">
-            <img id="logotiktok" src="../imagens/redes-sociais/tiktok.png" alt="tiktok">
-            <a href="mailto:bridgeassessoriadigital@gmail.com?subject=Vamos fazer um novo projeto?!"><img id="logoemail" src="../imagens/redes-sociais/email.png" alt="email"></a>
-
-        </div>
-   
-        <div class="footer-bottom">
-            <p>&copy; 2024 Bridge Assessoria Digital | Desenvolvido por <a id="devsession" href="https://github.com/MateusLimadev">Mateus lima</a></p>
-        </div>
-    </footer>
-    
-
-       
-   
-      
-<script src="sobrenos.js"></script>
-
-    
-       
-   
-      
 <script src="servicos.js"></script>
 </body>
 </html>
