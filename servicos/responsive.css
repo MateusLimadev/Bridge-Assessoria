@@ -222,12 +222,11 @@
     max-width: 100%;
 }
 
-
+#btn-mobile-servicos{
+    display: none;
+}
  
-    
-
-
-    
+     
     
 }
 
@@ -243,17 +242,22 @@
         opacity: 40%;
     } 
 
-    .mobilecontent p{
-        display: none;
-    }
+   
 
-
-  .mobilecontent {
-    top: 39%;
+.mobilecontent {
+    top: 19%;
     left: 5%;
 }
 
 
+.mobilecontent h1 {
+    color: var(--cor-primaria);
+    font-size: 25px;
+}
+
+ .mobilecontent p {
+   font-size: 13px;
+}
 
 
 }
