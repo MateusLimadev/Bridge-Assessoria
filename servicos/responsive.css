@@ -241,12 +241,16 @@
         display: block;
         max-width: 100%;
         opacity: 40%;
+    } 
+
+    .mobilecontent p{
+        display: none;
     }
 
 
-   .mobilecontent {
-        top: 21%;
-        left: 10%;
+  .mobilecontent {
+    top: 39%;
+    left: 5%;
 }
 
 
