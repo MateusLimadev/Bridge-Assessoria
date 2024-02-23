@@ -193,3 +193,8 @@ body{
     font-size: 27px;
     
 }
+
+
+.mobilecontent{
+    display: none;
+}
