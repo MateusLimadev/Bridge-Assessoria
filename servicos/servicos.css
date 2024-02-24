@@ -245,10 +245,15 @@ body{
 
 
 .card {
-   
-    flex: 0 0 calc(50% - 10px); 
-    box-sizing: border-box; 
+    flex: 0 0 calc(50% - 10px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
 }
+
+.card:hover {
+    transform: scale(1.05); /* Aplica um leve zoom ao passar o mouse */
+}
+
 
 .cards div{
 
