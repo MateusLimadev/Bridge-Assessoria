@@ -401,6 +401,7 @@ main{
 
 #typing-effect::after {
   content: "|";
+  color: #E76003;
   animation: blink-caret 0.6s infinite;
 }
 
