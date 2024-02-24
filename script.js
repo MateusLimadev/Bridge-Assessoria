@@ -59,4 +59,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const projects = document.querySelectorAll('.project');
 
+    function checkVisibility() {
+        projects.forEach(function (project) {
+            const rect = project.getBoundingClientRect();
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            if (rect.top <= windowHeight && rect.bottom >= 0) {
+                project.classList.add('appear');
+            }
+        });
+    }
+
+    document.addEventListener('scroll', checkVisibility);
+    window.addEventListener('resize', checkVisibility);
+
+    // Chame checkVisibility() ao carregar a página para verificar os projetos visíveis inicialmente
+    checkVisibility();
+});
