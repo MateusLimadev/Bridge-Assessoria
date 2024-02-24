@@ -218,16 +218,36 @@ body{
     margin-bottom: 30px;
 }
 
-.cards{
+.cards {
     padding: 20px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 40px;
     margin: auto;
     width: 100%;
     background-color: var(--cor-primaria);
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+
+}
+
+
+.cards {
+    opacity: 0; /* Start with 0 opacity */
+    transform: translateY(-20px); /* Start with a translateY to hide the cards initially */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Add transitions for transform and opacity */
+}
+
+.cards.show {
+    transform: translateY(0); /* Move the cards to their original position on show */
+    opacity: 1; /* Set opacity to 1 when the 'show' class is added */
+}
+
+
+
+.card {
    
-   
+    flex: 0 0 calc(50% - 10px); 
+    box-sizing: border-box; 
 }
 
 .cards div{
@@ -288,6 +308,129 @@ body{
     transition: 0.5s;
 }
 
-#description-card, #imgcard, .cards a {
-    display: none;
+section {
+  
+  left: 0;
+  bottom: 12px;
+  width: 100%;
+  background: var(--cor-background);
+  padding-top: 60px;
+  font-family: var(--font-principal-book);
+}
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 0 30px;
+}
+
+@media (width < 600px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer.bottom {
+    gap: 16px;
+    flex-direction: column-reverse;
+  }
+}
+
+footer > img {
+  margin-top: 10px;
+}
+
+@media (width >= 620px) {
+  footer {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+  }
+}
+
+footer {
+  color: #c2bfac;
+}
+
+footer > img {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+footer.top {
+  border-bottom: 2px solid #E76003;
+  padding-bottom: 20px;
+}
+
+footer.bottom {
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+footer.top .links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.links > div {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+footer h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #f7f7f7;
+}
+
+.legal {
+  font-size: 12px;
+}
+
+.legal > a {
+  margin: 0 4px;
+}
+
+.legal > span {
+  margin-right: 10px;
+}
+
+footer.bottom .links {
+  display: flex;
+  gap: 18px;
+}
+
+footer.bottom .links > a {
+  font-size: 24px;
+}
+
+@media (width <= 420px) {
+  footer {
+    text-align: center;
+    align-items: center;
+  }
+
+  footer.top .links {
+    grid-template-columns: 1fr;
+  }
+
+  
+
+  footer.bottom {
+    align-items: center;
+  }
+
+  .legal > span {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 2px;
+  }
+}
+
+.links img{
+  width: 25px;
+  opacity: 70%;
 }

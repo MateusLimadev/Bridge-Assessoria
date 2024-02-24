@@ -34,13 +34,18 @@ window.addEventListener('scroll', function () {
 
 
 
- function showDescription(){
+// Get the target element
+const cardsElement = document.querySelector('.cards');
 
-    var cardimg = document.getElementById('imgcard');
-    var carddescription = document.getElementById('description-card');
+// Set up the Intersection Observer
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Add the 'show' class when the target element is in view
+            cardsElement.classList.add('show');
+        }
+    });
+}, { threshold: 0.3 }); // Adjust the threshold as needed
 
-    cardimg.style.display = 'block';
-
-   
- 
- }
+// Start observing the target element
+observer.observe(cardsElement);
