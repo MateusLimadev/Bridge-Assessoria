@@ -53,3 +53,33 @@ const observador = new IntersectionObserver(entradas => {
 // Comece a observar o elemento alvo
 observador.observe(elementoCartoes);
 
+
+document.addEventListener('DOMContentLoaded', function () {
+            var cards = document.querySelectorAll('.card');
+
+            function isElementInViewport(el) {
+                var rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+
+            function handleScroll() {
+                cards.forEach(function (card) {
+                    if (isElementInViewport(card)) {
+                        card.classList.add('zoom');
+                    } else {
+                        card.classList.remove('zoom');
+                    }
+                });
+            }
+
+            document.addEventListener('scroll', handleScroll);
+            window.addEventListener('resize', handleScroll);
+
+            // Chame handleScroll() ao carregar a página para verificar os cards visíveis inicialmente
+            handleScroll();
+        });
