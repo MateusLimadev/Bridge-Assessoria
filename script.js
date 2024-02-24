@@ -63,12 +63,24 @@ document.addEventListener('DOMContentLoaded', function () {
     const projects = document.querySelectorAll('.project');
 
     function checkVisibility() {
+        const scrollY = window.scrollY || document.documentElement.scrollTop;
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        // Verifica se o scroll está no topo da página
+        if (scrollY === 0) {
+            projects.forEach(function (project) {
+                project.classList.remove('appear');
+            });
+            return; // Não precisa verificar visibilidade se estiver no topo
+        }
+
+        // Verifica a visibilidade dos projetos
         projects.forEach(function (project) {
             const rect = project.getBoundingClientRect();
-            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
             if (rect.top <= windowHeight && rect.bottom >= 0) {
                 project.classList.add('appear');
+            } else {
+                project.classList.remove('appear');
             }
         });
     }
