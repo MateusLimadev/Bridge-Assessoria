@@ -31,3 +31,16 @@ window.addEventListener('scroll', function () {
         header.classList.add('transparent');
     }
 });
+
+
+
+ function showDescription(){
+
+    var cardimg = document.getElementById('imgcard');
+    var carddescription = document.getElementById('description-card');
+
+    cardimg.style.display = 'block';
+
+   
+ 
+ }

@@ -582,7 +582,7 @@ footer.bottom .links > a {
   font-size: 24px;
 }
 
-@media (width < 420px) {
+@media (width <= 420px) {
   footer {
     text-align: center;
     align-items: center;

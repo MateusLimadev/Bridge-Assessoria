@@ -198,3 +198,96 @@ body{
 .mobilecontent{
     display: none;
 }
+
+
+.content-article{
+    background-color: var(--cor-primaria);
+    font-family: var(--font-principal-book);
+    padding: 60px;
+}
+
+#diferenciais p{
+
+    color: #0d0f1293;
+    font-size: 28px;
+}
+
+#diferenciais h5{
+    color: var(--cor-secundaria);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cards{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+    background-color: var(--cor-primaria);
+   
+   
+}
+
+.cards div{
+
+    max-width: 300px;
+    box-shadow:
+    1.9px 22.4px 15.8px rgba(0, 0, 0, 0.13),
+    15px 179px 126px rgba(0, 0, 0, 0.19);
+    
+}
+
+
+
+
+
+.cards img{
+
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    
+
+}
+
+.cards h1{
+    text-align: left;
+    font-size: 21px;
+    font-family: var(--font-principal-book);
+    padding: 13px;
+    padding-bottom: 0;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+
+.cards p {
+    text-align: left;
+    font-size: 14px;
+    font-family: var(--font-principal-book);
+    padding: 9px;
+    color: #131314;
+}
+
+.cards a{
+    text-decoration: none;
+    display: flex;
+    padding: 13px;
+    color: var(--cor-background);
+    font-family: var(--font-principal-book);
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.cards a:hover{
+    color: #e75e039f;
+    transition: 0.5s;
+}
+
+#description-card, #imgcard, .cards a {
+    display: none;
+}
