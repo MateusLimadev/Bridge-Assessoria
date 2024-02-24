@@ -34,18 +34,22 @@ window.addEventListener('scroll', function () {
 
 
 
-// Get the target element
-const cardsElement = document.querySelector('.cards');
+// Obtenha o elemento alvo
+const elementoCartoes = document.querySelector('.cards');
 
-// Set up the Intersection Observer
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Add the 'show' class when the target element is in view
-            cardsElement.classList.add('show');
+// Configure o Intersection Observer
+const observador = new IntersectionObserver(entradas => {
+    entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+            // Adicione a classe 'show' quando o elemento alvo estiver visível
+            elementoCartoes.classList.add('show');
+        } else {
+            // Remova a classe 'show' quando o elemento alvo estiver fora de vista
+            elementoCartoes.classList.remove('show');
         }
     });
-}, { threshold: 0.3 }); // Adjust the threshold as needed
+}, { threshold: 0.3 }); // Ajuste o limiar conforme necessário
 
-// Start observing the target element
-observer.observe(cardsElement);
+// Comece a observar o elemento alvo
+observador.observe(elementoCartoes);
+
