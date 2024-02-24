@@ -91,3 +91,47 @@ document.addEventListener('DOMContentLoaded', function () {
     // Chame checkVisibility() ao carregar a página para verificar os projetos visíveis inicialmente
     checkVisibility();
 });
+
+
+const words = ["digital.", "Bridge."];
+const speedType = 400; // Velocidade para digitar
+const speedErase = 150; // Velocidade para apagar
+let wordIndex = 0;
+let letterIndex = 0;
+const typingEffectElement = document.getElementById('typing-effect');
+
+function type() {
+  const currentWord = words[wordIndex];
+  typingEffectElement.textContent = currentWord.slice(0, letterIndex) + "";
+  
+  if (letterIndex < currentWord.length) {
+    letterIndex++;
+    setTimeout(type, speedType / 2);
+  } else {
+    setTimeout(() => {
+      erase();
+    }, speedType);
+  }
+}
+
+
+function erase() {
+  const currentWord = words[wordIndex];
+  typingEffectElement.textContent = currentWord.slice(0, letterIndex--) + "";
+
+  if (letterIndex >= 0) {
+    setTimeout(erase, speedErase / 2);
+  } else {
+    wordIndex = (wordIndex + 1) % words.length;
+    setTimeout(() => {
+      letterIndex = 0;
+      type();
+    }, speedType / 2);
+  }
+}
+
+// Inicialize o conteúdo do elemento com uma string vazia
+typingEffectElement.textContent = "";
+
+// Inicie o efeito imediatamente
+type();

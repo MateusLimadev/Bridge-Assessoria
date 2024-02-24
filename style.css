@@ -399,6 +399,17 @@ main{
  
 }
 
+#typing-effect::after {
+  content: "|";
+  animation: blink-caret 0.6s infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
 .project {
     transition: opacity 2s ease-in-out; 
     opacity: 0;
