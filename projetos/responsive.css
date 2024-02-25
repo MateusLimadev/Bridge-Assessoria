@@ -1,4 +1,25 @@
+@font-face {
+    font-family: 'futur';
+    src: url(/assets/fonts/futura/futur.ttf);
+}
+
+@font-face {
+    font-family: 'futur-book';
+    src: url(/assets/fonts/futura/Futura\ Book\ font.ttf);
+}
+
+@font-face {
+    font-family: 'nasalation';
+    src: url(/assets/fonts/nasalization/nasalization-rg.otf);
+}
+
+
 :root{
+
+
+    --font-principal:'futur';
+    --font-principal-book: 'futur-book';
+    --font-secundaria:'nasalation';
 
     --cor-background: #0D0F12;
     --cor-secundaria: #E76003;
@@ -6,22 +27,56 @@
 }
 
 
+
+@media (max-width: 1035px) {
+
+    .cards{
+        opacity: 100%;
+        transform: translateY(-20px);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+  
+}
+
+
+
 @media (max-width: 820px){
 
-    #outhersprojects {
-    flex-direction: column; /* Alterando para direção de coluna */
-    align-items: stretch; /* Estica os itens para ocupar a largura total */
-  }
 
-  #outhersprojects > div {
-    flex: 1 1 auto; /* Resetando as propriedades flex para o layout de coluna */
-    min-width: 0; /* Resolvendo problemas de overflow em alguns navegadores */
-  }
+    .text-container{
+        display: none;
+                                     
+    }
 
-  #outhersprojects > div::before {
-    min-width: 0; /* Removendo o espaçamento adicional entre as colunas */
-  }
+   .mobilecontent{
+    display: block;
+    display: flex;
+    width: 80vw;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin: auto;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    
+   
+    
+   }
 
+ .mobilecontent h1 {
+    color: var(--cor-primaria);
+    font-family: var(--font-principal-book);
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+ .mobilecontent p {
+   color: var(--cor-primaria);
+   font-family: var(--font-principal-book);
+   font-size: 16px;
+}
 
 
    .loader {
@@ -160,37 +215,50 @@
          border-radius: 0;
     }
 
-    .cards{
+    .cards {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: auto;
-        
+        opacity: 100%;
+        transform: translateY(-40px);
+        transition: transform 0.5s ease, opacity 0.5s ease;
     }
 
-    .cards div{
 
-    max-width: 80%;
-   
-}
+    .cards div {
+        max-width: 80%;
+    }
 
 .cards img{
     max-width: 100%;
 }
 
+#btn-mobile-servicos{
+    display: none;
+}
+ 
 
+  #outhersprojects {
+    flex-direction: column; /* Alterando para direção de coluna */
+    align-items: stretch; /* Estica os itens para ocupar a largura total */
+  }
 
-    
+  #outhersprojects > div {
+    flex: 1 1 auto; /* Resetando as propriedades flex para o layout de coluna */
+    min-width: 0; /* Resolvendo problemas de overflow em alguns navegadores */
+  }
 
+  #outhersprojects > div::before {
+    min-width: 0; /* Removendo o espaçamento adicional entre as colunas */
+  }
 
-    
+     
     
 }
 
 @media (max-width: 600px){
-
- 
 
     #bannerPC{
         display: none;
@@ -199,65 +267,55 @@
      #bannerMobile{
         display: block;
         max-width: 100%;
-        opacity: 60%;
-    }
+        opacity: 40%;
+    } 
 
-    .container {
-    position: relative;
+   #diferenciais p {
+    color: #0d0f1293;
+    font-size: 15px;
+}
+
+.mobilecontent {
+    top: 41%;
+    left: 5%;
 }
 
 
-.container h1,
-.container h2,
-.container h3 {
-    position: absolute;
-    margin: 0;
-    font-family: var(--font-principal);
-    font-weight: bold;
-}
-
-.container h1 {
+.mobilecontent h1 {
     color: var(--cor-primaria);
-    font-size: 20vw;
-    top: 17%;
-    left: 39%;
-    transform: translateX(-50%);
-}
-
-.container h2 {
-    color: var(--cor-primaria);
-    font-size: 20vw;
-    top: 42%;
-    left: 49%;
-    transform: translateX(-50%);
-}
-
-.container h3 {
-    color: var(--cor-secundaria);
-    font-size: 15vw;
-    top: 30%;
-    left: 17%;
-    transform: translateX(-50%);
-}
-
-#maincontent{
-    padding: 39px;
-}
-
-
-#maincontent h1{
     font-size: 30px;
 }
 
-#maincontent p{
-    font-size: 20px;
+ .mobilecontent p {
+   font-size: 16px;
 }
+
+     .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        opacity: 100%;
+        transform: translateY(-40px);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+     .card {
+            width: 100%;
+            box-sizing: border-box;
+            transition: transform 0.3s ease;
+        }
+
+        .card.zoom {
+            transform: scale(1.1);
+        }
+
+
 }
 
     
-    
-
-
+  
 
 
    

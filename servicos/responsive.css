@@ -248,6 +248,11 @@
 
 @media (max-width: 600px){
 
+     #diferenciais p {
+    color: #0d0f1293;
+    font-size: 15px;
+}
+
     #bannerPC{
         display: none;
     }
