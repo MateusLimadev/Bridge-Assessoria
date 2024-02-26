@@ -188,8 +188,13 @@ body::before {
     margin-top: 39px;
 }
 
-.outhersctt img{
+.outhersctt img {
   width: 50px;
+  transition: width 0.3s;
+}
+
+.outhersctt img:hover {
+  width: 60px; 
 }
 
 
