@@ -508,6 +508,20 @@ footer.bottom .links > a {
  
 }
 
+.project {
+    transition: opacity 2s ease-in-out; 
+    opacity: 0;
+}
+
+.project img{
+  transition: 0.5s ease-in-out;
+}
+
+.project img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 #typing-effect::after {
   content: "|";
   color: #E76003;
