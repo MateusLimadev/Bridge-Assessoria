@@ -215,12 +215,15 @@ body{
       font-family: var(--font-principal-book);
       font-weight: bold;
       cursor: pointer;
+      width: 100%;
       
     }
 
     form button:hover{
-      background-color: #f1eedb;
-      color: #E76003;
+      background-color: #a74e13a7;
+      color: #ffffff;
+      
+      
     }
 
 
