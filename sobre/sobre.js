@@ -68,5 +68,46 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+ $(document).ready(function() {
+    // Encontra todas as divs com a classe 'mvvcontainer'
+    var divs = $('.mvvcontainer > div');
 
+    // Inicializa o índice da div atual
+    var currentIndex = 0;
+
+    // Configura a função de rolagem
+    function scrollToNextDiv() {
+      // Verifica se há uma próxima div
+      if (currentIndex < divs.length - 1) {
+        // Incrementa o índice da div
+        currentIndex++;
+
+        // Obtém a posição top da próxima div
+        var nextDivTop = divs.eq(currentIndex).offset().top;
+
+        // Realiza a animação de rolagem
+        $('html, body').animate({
+          scrollTop: nextDivTop
+        }, 800); // 800 é a duração da animação em milissegundos
+      }
+    }
+
+    // Configura o evento de rolagem da página
+    $(window).on('scroll', function() {
+      // Obtém a posição atual da janela de visualização
+      var windowTop = $(window).scrollTop();
+
+      // Obtém a posição top da div atual
+      var currentDivTop = divs.eq(currentIndex).offset().top;
+
+      // Define uma margem de folga para a transição suave
+      var marginOfError = 50;
+
+      // Verifica se a janela de visualização está perto do topo da div atual
+      if (windowTop > currentDivTop - marginOfError) {
+        // Chama a função para rolar para a próxima div
+        scrollToNextDiv();
+      }
+    });
+  });
         
