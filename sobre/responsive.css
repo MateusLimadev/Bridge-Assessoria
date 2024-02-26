@@ -28,19 +28,69 @@
 
 
 
-@media (max-width: 1035px) {
-
-    .cards{
-        opacity: 100%;
-        transform: translateY(-20px);
-        transition: transform 0.5s ease, opacity 0.5s ease;
-    }
-  
-}
 
 
 
 @media (max-width: 820px){
+
+
+        .mvvcontainer{
+            margin-top: 30%;
+        }
+
+        #mvvcontent{
+            flex-direction: column;
+            align-items: center;
+            
+
+        }
+
+        #mvvtext{
+        padding: 20px;
+        }
+
+        .missao h1{
+            font-size: 26px;
+        }
+
+        .missao p{
+            font-size: 14px;
+        }
+
+        .missao img {
+            max-width: 241px;
+            margin-bottom: 20px;
+        }
+
+      
+
+         .visao h1{
+            font-size: 26px;
+        }
+
+        .visao p{
+            font-size: 14px;
+        }
+
+        .visao img {
+            max-width: 241px;
+            margin-bottom: 20px;
+        }
+
+
+
+           .valores h1{
+            font-size: 26px;
+        }
+
+        .valores p{
+            font-size: 14px;
+        }
+
+        .valores img {
+            max-width: 241px;
+            margin-bottom: 20px;
+        }
 
 
     .text-container{
