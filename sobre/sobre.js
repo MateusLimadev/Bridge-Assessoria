@@ -68,5 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
+document.addEventListener("DOMContentLoaded", function() {
+  var container = document.querySelector('.mvvcontainer');
+  container.classList.add('show');
+});
 
