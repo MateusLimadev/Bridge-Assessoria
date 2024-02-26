@@ -386,7 +386,9 @@ main{
   }
 }
 
-
+a{
+  text-decoration: none;
+}
 
 
 .projects{
