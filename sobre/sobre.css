@@ -328,20 +328,68 @@ body{
 }
 
 
-.missao{
-  background-color: #E76003;
-  
-}
+
+   .missao {
+    background-color: var(--cor-background);
+    display: flex;
+  }
+
+
+  .missao img {
+    max-width: 300px;
+    
+  }
+
 
 .missao h1{
+  color: var(--cor-secundaria);
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+   .visao {
+    background-color: var(--cor-secundaria);
+    display: flex;
+  }
+
+
+  .visao img {
+    max-width: 300px;
+    
+  }
+
+
+.visao h1{
   color: var(--cor-primaria);
   margin-bottom: 20px;
 }
 
-.valores{
-  background-color: var(--cor-primaria);
-}
 
+   .valores {
+    background-color: var(--cor-primaria);
+    display: flex;
+  }
+
+
+  .valores img {
+    max-width: 300px;
+    
+  }
+
+
+  .valores h1{
+    color: #E76003;
+    margin-bottom: 20px;
+  }
+
+  .valores p{
+    color: #0D0F12;
+  }
 
 
 section {
