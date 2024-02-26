@@ -35,8 +35,21 @@
 
 body{
     background-color:  #131314;
+    
    
     
+}
+
+body::before {
+    content: "";
+    background-image: url(/assets/imagens/bannerContact.png);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 38%; /* Ajuste o valor conforme necessário */
 }
 
 #btn-mobile{
