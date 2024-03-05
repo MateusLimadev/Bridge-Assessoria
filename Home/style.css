@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'futur';
-    src: url(assets/fonts/futura/Futura\ Heavy\ font.ttf);
+    src: url(/assets/fonts/futura/Futura\ Heavy\ font.ttf);
 }
 
 @font-face {
     font-family: 'futur-book';
-    src: url(assets/fonts/futura/Futura\ Book\ font.ttf);
+    src: url(/assets/fonts/futura/Futura\ Book\ font.ttf);
 }
 
 @font-face {
     font-family: 'nasalation';
-    src: url(assets/fonts/nasalization/nasalization-rg.otf);
+    src: url(/assets/fonts/nasalization/nasalization-rg.otf);
 }
 
 *{
