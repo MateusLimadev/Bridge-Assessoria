@@ -139,17 +139,17 @@
         padding: 2rem 0;
         margin: 17px 1rem;
         text-align: center;
-        ma
         font-size: 20px;
         border-radius: 0;
         border-bottom: 2px solid rgba(255, 255, 255, 0.137);
     }
 
-    #menu a:hover{
-    border-bottom: 2px solid #E76003; 
-    padding-bottom: 4px; 
-    
-}
+     #menu a:hover{
+     color: var(--cor-secundaria);
+     background-color: transparent;
+     border-radius: 0;
+     padding: 2rem 0;
+  }
 
   #nav.active #menu{
         display: block;
