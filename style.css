@@ -316,6 +316,22 @@ main{
     color: #e75e0388;
 }
 
+.sobreservicos a{
+  text-decoration: none;
+  font-size: 24px;
+    color: var(--cor-secundaria);
+     max-width: 50%;
+     margin-left: 10px;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+
+.sobreservicos a:hover{
+     transition: 0.5s;
+    color: #e75e0388;
+}
+
 
 .loader {
   position: relative;
